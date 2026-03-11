@@ -1,0 +1,1159 @@
+<!doctype html>
+<html lang="fr" class="h-full">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio numérique professionnel de Jihene Romdhane — enseignante de langues (anglais/français), parcours international, évaluation et pratiques au primaire et au secondaire." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237BAE7F'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='32' fill='white'%3E📖%3C/text%3E%3C/svg%3E" />
+  <title>Jihene Romdhane — Portfolio professionnel</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:      { 50:'#f0f5f0', 100:'#dce8dc', 200:'#b8d1b8', 300:'#94ba94', 400:'#7BAE7F', 500:'#5f9a63', 600:'#4d8051', 700:'#3b6640', 800:'#2a4c2f', 900:'#19321e' },
+            golden:    { 50:'#fef9eb', 100:'#fbefc4', 200:'#f8e18b', 300:'#f5d452', 400:'#F5C842', 500:'#d4a82e', 600:'#b38a20', 700:'#8b6c18', 800:'#634e12', 900:'#3b2f0b' },
+            dusty:     { 50:'#fdf2f0', 100:'#f9ddd8', 200:'#f3bbb2', 300:'#ed998c', 400:'#E8998D', 500:'#d47a6d', 600:'#b95c4e', 700:'#8e4639', 800:'#633128', 900:'#381c17' },
+            warmwhite: '#FDFAF5',
+            charcoal:  '#2E2E2E',
+          },
+          fontFamily: {
+            heading: ['"Playfair Display"', 'Georgia', 'serif'],
+            body:    ['"Nunito"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            'card': '16px',
+          },
+        },
+      },
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="h-full font-body" style="background:#FDFAF5; color:#2E2E2E;">
+
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:shadow">
+    Aller au contenu
+  </a>
+
+  <!-- ░░ HEADER ░░ -->
+  <header class="fixed left-0 right-0 top-0 z-40 border-b backdrop-blur" style="background:rgba(253,250,245,0.92); border-color:rgba(123,174,127,0.1); box-shadow:0 1px 4px rgba(123,174,127,0.05);">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
+
+      <!-- Marque -->
+      <div class="flex min-w-0 items-center gap-3">
+        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-lg" style="background:#7BAE7F;">📖</span>
+        <div class="min-w-0">
+          <p class="font-heading text-sm font-semibold" style="color:#2E2E2E;">Jihene Romdhane</p>
+          <p class="truncate text-xs" style="color:#888;">Enseignante en langues&ensp;·&ensp;Évaluation&ensp;·&ensp;Parcours international</p>
+        </div>
+      </div>
+
+      <!-- Nav desktop -->
+      <nav class="hidden items-center gap-1 md:flex" aria-label="Navigation principale">
+        <a class="nav-link rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:text-sage-700" style="color:#555;" href="#accueil">Accueil</a>
+        <a class="nav-link rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:text-sage-700" style="color:#555;" href="#philosophie">Ma Philosophie</a>
+        <a class="nav-link rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:text-sage-700" style="color:#555;" href="#activites">Mes Activités</a>
+        <a class="nav-link rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:text-sage-700" style="color:#555;" href="#outils">Ma Boîte à Outils</a>
+        <a class="nav-link rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:text-sage-700" style="color:#555;" href="#journal">Mon Journal</a>
+        <a class="nav-link rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:text-sage-700" style="color:#555;" href="#annexes">Annexes</a>
+      </nav>
+
+      <!-- Bouton menu mobile -->
+      <button
+        id="menuBtn"
+        type="button"
+        aria-controls="menuMobile"
+        aria-expanded="false"
+        class="inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-sm shadow-sm transition md:hidden"
+        style="border-color:rgba(123,174,127,0.3); color:#3b6640; background:#FDFAF5;"
+      >
+        <i data-lucide="menu" class="h-4 w-4"></i>
+        <span>Menu</span>
+      </button>
+    </div>
+
+    <!-- Nav mobile -->
+    <div id="menuMobile" class="hidden border-t md:hidden" role="region" aria-label="Menu mobile" style="background:#FDFAF5; border-color:rgba(123,174,127,0.1);">
+      <nav class="mx-auto grid max-w-6xl gap-0.5 px-4 py-3" aria-label="Navigation mobile">
+        <a class="nav-link flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm hover:bg-sage-50" style="color:#2E2E2E;" href="#accueil"><i data-lucide="home" class="h-4 w-4" style="color:#7BAE7F;"></i> Accueil &amp; Profil</a>
+        <a class="nav-link flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm hover:bg-sage-50" style="color:#2E2E2E;" href="#philosophie"><i data-lucide="heart" class="h-4 w-4" style="color:#7BAE7F;"></i> Ma Philosophie d'évaluation</a>
+        <a class="nav-link flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm hover:bg-sage-50" style="color:#2E2E2E;" href="#activites"><i data-lucide="clipboard-list" class="h-4 w-4" style="color:#7BAE7F;"></i> Mes Activités &amp; Pratiques</a>
+        <a class="nav-link flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm hover:bg-sage-50" style="color:#2E2E2E;" href="#outils"><i data-lucide="wrench" class="h-4 w-4" style="color:#7BAE7F;"></i> Ma Boîte à Outils</a>
+        <a class="nav-link flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm hover:bg-sage-50" style="color:#2E2E2E;" href="#journal"><i data-lucide="book-open" class="h-4 w-4" style="color:#7BAE7F;"></i> Mon Journal de Bord</a>
+        <a class="nav-link flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm hover:bg-sage-50" style="color:#2E2E2E;" href="#annexes"><i data-lucide="file-text" class="h-4 w-4" style="color:#7BAE7F;"></i> Annexes (IA)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ░░ HERO BANNER ░░ -->
+  <div class="hero-banner pt-20">
+    <div class="relative z-10 mx-auto max-w-6xl px-4 py-16 text-center md:py-24">
+      <p class="text-lg font-medium text-white/90 md:text-xl">🍎</p>
+      <blockquote class="mt-4 font-heading text-2xl font-semibold italic leading-relaxed text-white md:text-4xl" style="text-shadow:0 2px 12px rgba(0,0,0,0.1);">
+        «&nbsp;Enseigner, c'est allumer une flamme,<br class="hidden md:inline"> pas remplir un vase.&nbsp;»
+      </blockquote>
+      <p class="mt-4 text-sm font-medium text-white/80">— attribué à Plutarque</p>
+      <div class="mt-8 flex justify-center gap-3">
+        <a href="#accueil" class="inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold shadow-lg transition hover:shadow-xl" style="background:#FDFAF5; color:#3b6640;">
+          <i data-lucide="arrow-down" class="h-4 w-4"></i> Découvrir mon portfolio
+        </a>
+      </div>
+    </div>
+    <!-- Bottom wave -->
+    <svg class="block w-full" viewBox="0 0 1440 60" preserveAspectRatio="none" style="margin-bottom:-1px;">
+      <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,30 1440,40 L1440,60 L0,60Z" fill="#FDFAF5"/>
+    </svg>
+  </div>
+
+  <main id="contenu" class="pb-10">
+
+    <!-- ╔═══════════════════════════════╗
+         ║  ACCUEIL & PROFIL            ║
+         ╚═══════════════════════════════╝ -->
+    <section id="accueil" class="section-warm scroll-mt-20">
+      <div class="mx-auto max-w-6xl px-4 pt-10 pb-2">
+
+      <!-- Carte hero -->
+      <div class="overflow-hidden rounded-card bg-white shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
+        <!-- Bandeau dégradé -->
+        <div class="h-2 w-full" style="background:linear-gradient(90deg, #7BAE7F 0%, #F5C842 50%, #E8998D 100%);"></div>
+
+        <div class="grid gap-8 p-6 md:grid-cols-12 md:items-stretch md:p-8">
+
+          <!-- Texte principal -->
+          <div class="md:col-span-7">
+            <span class="badge-sage inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold">
+              Portfolio numérique professionnel
+            </span>
+            <h1 class="mt-4 font-heading text-3xl font-bold tracking-tight md:text-4xl" style="color:#2E2E2E;">
+              Bienvenue&nbsp;<span>🌍</span>
+            </h1>
+            <p class="mt-4 text-base leading-[1.7]" style="color:#444;">
+              Je suis <strong style="color:#2E2E2E;">Jihene Romdhane</strong>, enseignante en langues (anglais et français),
+              passionnée par l'apprentissage authentique, la relation éducative et l'évaluation qui soutient réellement
+              la progression des élèves.
+            </p>
+            <p class="mt-3 text-base leading-[1.7]" style="color:#444;">
+              Mon parcours est <strong>multiculturel</strong> et profondément humain : j'ai enseigné en
+              <strong>Tunisie</strong>, en <strong>France</strong> et au <strong>Canada</strong>.
+              Je parle couramment <strong>le français</strong>, <strong>l'anglais</strong> et <strong>l'arabe</strong>,
+              et je suis titulaire d'une <strong>maîtrise en langue anglaise</strong>.
+              En Tunisie, j'ai accompagné des enfants en <strong>maternelle</strong>. En France, j'ai exercé comme
+              <strong>professeure d'anglais certifiée</strong> (Éducation nationale). Plus récemment, à Montréal,
+              j'ai enseigné l'anglais à l'<strong>École Primaire JMC</strong>.
+            </p>
+            <p class="mt-3 text-base leading-[1.7]" style="color:#444;">
+              Ce portfolio est à la fois une <strong>preuve d'apprentissage</strong> pour mon cours universitaire
+              sur l'évaluation et une <strong>boîte à outils</strong> pour mon insertion professionnelle.
+              Je suis actuellement en <strong>formation en enseignement</strong> afin de devenir enseignante en <strong>Ontario</strong>.
+              Le système canadien est nouveau pour moi : j'avance pas à pas, avec curiosité, rigueur et humilité.
+              Ma force : <strong>adapter la démarche pédagogique</strong> aux besoins de publics hétérogènes, avec bienveillance et exigence.
+            </p>
+
+            <!-- Tags -->
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="tag-sage inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium">
+                <span class="h-1.5 w-1.5 rounded-full" style="background:#7BAE7F;"></span>Évaluation formative
+              </span>
+              <span class="tag-rose inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium">
+                <span class="h-1.5 w-1.5 rounded-full" style="background:#E8998D;"></span>Différenciation
+              </span>
+              <span class="tag-gold inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium">
+                <span class="h-1.5 w-1.5 rounded-full" style="background:#F5C842;"></span>Plurilinguisme
+              </span>
+              <span class="tag-neutral inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium">
+                <span class="h-1.5 w-1.5 rounded-full" style="background:#888;"></span>Primaire &amp; Secondaire
+              </span>
+            </div>
+          </div>
+
+          <!-- Sidebar profil -->
+          <div class="md:col-span-5">
+            <div class="flex h-full flex-col gap-4 rounded-xl p-4" style="background:#f9f7f2; border:1px solid rgba(123,174,127,0.12);">
+
+              <!-- Photo placeholder -->
+              <div class="aspect-[4/3] overflow-hidden rounded-xl border bg-white" style="border-color:rgba(123,174,127,0.2);">
+                <img
+                  src="assets/photo.jpg"
+                  alt="Photo professionnelle de Jihene Romdhane"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <!-- Profil rapide -->
+              <div class="rounded-xl border bg-white p-4" style="border-color:rgba(123,174,127,0.15);">
+                <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#7BAE7F;">Profil en bref</p>
+                <dl class="mt-3 grid grid-cols-2 gap-3 text-sm">
+                  <div>
+                    <dt class="text-xs" style="color:#999;">Spécialité</dt>
+                    <dd class="mt-0.5 font-semibold" style="color:#2E2E2E;">Anglais &amp; Français</dd>
+                  </div>
+                  <div>
+                    <dt class="text-xs" style="color:#999;">Langues</dt>
+                    <dd class="mt-0.5 font-semibold" style="color:#2E2E2E;">FR · EN · AR</dd>
+                  </div>
+                  <div>
+                    <dt class="text-xs" style="color:#999;">Milieux</dt>
+                    <dd class="mt-0.5 font-semibold" style="color:#2E2E2E;">TN · FR · CA</dd>
+                  </div>
+                  <div>
+                    <dt class="text-xs" style="color:#999;">Objectif</dt>
+                    <dd class="mt-0.5 font-semibold" style="color:#4d8051;">Ontario (en cours)</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="rounded-xl p-4 info-sage">
+                <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#4d8051;">Artefacts</p>
+                <p class="mt-1 text-xs" style="color:#555;">
+                  Ce portfolio accueille des <strong>photos</strong>, <strong>audios</strong> et <strong>vidéos</strong>.
+                  Cherchez les blocs marqués dans chaque section.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 cartes info -->
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <article class="card-hover overflow-hidden rounded-card bg-white p-6" style="border:1px solid rgba(123,174,127,0.10);">
+          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl text-lg" style="background:rgba(123,174,127,0.12);">📂</div>
+          <h2 class="font-heading text-lg font-semibold" style="color:#2E2E2E;">À propos du portfolio</h2>
+          <p class="mt-2 text-sm leading-[1.7]" style="color:#555;">
+            Un espace simple et organisé pour rassembler mes traces de formation, mes essais en classe et mes réflexions.
+            Je vise la <strong>logique</strong> et la cohérence (pas la perfection) : montrer ce que je fais, pourquoi je le fais,
+            et comment j'ajuste.
+          </p>
+          <ul class="mt-3 space-y-2 text-sm" style="color:#555;">
+            <li class="flex items-start gap-2"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full" style="background:#7BAE7F;"></span>Traces d'apprentissage (cours, lectures, travaux)</li>
+            <li class="flex items-start gap-2"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full" style="background:#7BAE7F;"></span>Outils d'évaluation testés, adaptés et expliqués</li>
+            <li class="flex items-start gap-2"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full" style="background:#7BAE7F;"></span>Journal de bord : ce que je découvre du système canadien.</li>
+          </ul>
+        </article>
+
+        <article class="card-hover overflow-hidden rounded-card bg-white p-6" style="border:1px solid rgba(232,153,141,0.12);">
+          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl text-lg" style="background:rgba(232,153,141,0.12);">💡</div>
+          <h2 class="font-heading text-lg font-semibold" style="color:#2E2E2E;">Mon intention</h2>
+          <p class="mt-2 text-sm leading-[1.7]" style="color:#555;">
+            Rendre visibles mes choix pédagogiques, mes pratiques d'évaluation et mon évolution — avec bienveillance et exigence.
+            J'ai enseigné en <strong>Tunisie</strong> et en <strong>France</strong>, et je m'intègre aujourd'hui dans un système
+            qui est nouveau pour moi.
+          </p>
+          <p class="mt-3 text-sm leading-[1.7]" style="color:#555;">
+            Je ne prétends pas tout savoir. Je documente plutôt ce que j'apprends : ce qui me semble juste, ce qui me questionne,
+            et ce que je dois clarifier. Je garde un <strong>œil critique</strong> — sans perdre la chaleur humaine qui fait, pour moi,
+            la qualité d'une relation éducative.
+          </p>
+        </article>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="section-divider">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <path d="M0,20 C200,40 400,0 600,20 C800,40 1000,0 1200,20" stroke="#E8998D" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <path d="M0,25 C300,5 600,45 900,15 C1050,5 1150,25 1200,20" stroke="#7BAE7F" stroke-width="1" fill="none" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <!-- ╔═══════════════════════════════╗
+         ║  PHILOSOPHIE D'ÉVALUATION    ║
+         ╚═══════════════════════════════╝ -->
+    <section id="philosophie" class="section-sage scroll-mt-20 py-12">
+      <div class="mx-auto max-w-6xl px-4">
+
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div class="section-heading">
+          <h2 class="section-title font-heading text-2xl font-bold tracking-tight" style="color:#2E2E2E;">
+            <i data-lucide="heart" class="mb-1 mr-2 inline h-6 w-6" style="color:#E8998D;"></i>Ma Philosophie d'évaluation
+          </h2>
+          <p class="mt-2 max-w-2xl text-sm" style="color:#666;">Ma conception initiale : croyances, valeurs et intentions pédagogiques.</p>
+        </div>
+        <span class="badge-sage self-start rounded-full px-3 py-1 text-xs font-semibold sm:self-auto">
+          Réflexion — en évolution
+        </span>
+      </div>
+
+      <div class="mt-10 grid gap-8 md:grid-cols-2">
+
+        <article class="card-hover overflow-hidden rounded-card bg-white p-6" style="border:1px solid rgba(123,174,127,0.10);">
+          <h3 class="font-heading text-lg font-semibold" style="color:#2E2E2E;">1 — Ma conception de l'évaluation</h3>
+          <p class="mt-3 text-sm leading-[1.7]" style="color:#555;">
+            Pour moi, l'évaluation n'est pas un « moment de verdict », mais un <strong>processus continu</strong> qui éclaire
+            l'enseignement, soutient l'apprentissage et aide chaque élève à comprendre où il en est, où il va, et comment progresser.
+            La lecture de <em>Faire croître le succès</em> (MÉO, 2010) m'a fait comprendre que l'évaluation peut servir <strong>trois intentions</strong> :
+            au service de l'apprentissage, en tant qu'apprentissage et de l'apprentissage.
+          </p>
+          <p class="mt-3 text-sm leading-[1.7]" style="color:#555;">
+            Concrètement, je cherche à repérer des <strong>indices</strong> (petits et fréquents) plutôt que d'attendre une seule note.
+            Le CFORP (Fascicule 3) m'a appris l'importance de <strong>trianguler les preuves d'apprentissage</strong> :
+            observation, productions de l'élève et communications orales — pour obtenir un portrait plus juste et équitable.
+          </p>
+          <div class="mt-4 rounded-xl p-4 info-neutral">
+            <p class="text-xs font-semibold" style="color:#2E2E2E;">Ce que je veux garder comme repères</p>
+            <ul class="mt-2 space-y-1 text-xs list-disc pl-4" style="color:#555;">
+              <li>Clarifier l'objectif et 2–3 critères observables avant la tâche.</li>
+              <li>Observer pendant (notes rapides, questions, mini-bilans) et ajuster tout de suite si besoin.</li>
+              <li>Croiser plusieurs types de traces (observation, échange oral, production) pour être plus juste.</li>
+              <li>Donner une rétroaction courte et actionnable, puis laisser du temps pour réinvestir.</li>
+            </ul>
+            <p class="mt-2 text-xs" style="color:#555;">
+              Comme le système canadien (Ontario) est nouveau pour moi, je prends le temps de comprendre les attentes et le vocabulaire
+              professionnel, sans faire semblant de tout maîtriser. J'avance avec méthode, et je garde un regard critique sur ce qui aide réellement
+              les élèves à progresser.
+            </p>
+          </div>
+        </article>
+
+        <article class="card-hover overflow-hidden rounded-card bg-white p-6" style="border:1px solid rgba(123,174,127,0.10);">
+          <h3 class="font-heading text-lg font-semibold" style="color:#2E2E2E;">2 — Croyances &amp; valeurs</h3>
+          <ul class="mt-3 space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold" style="background:rgba(123,174,127,0.15); color:#3b6640;">✦</span>
+              <span style="color:#444;"><strong>Équité</strong> — donner à chacun ce dont il a besoin pour réussir.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold" style="background:rgba(123,174,127,0.15); color:#3b6640;">✦</span>
+              <span style="color:#444;"><strong>Transparence</strong> — rendre les critères compréhensibles et partagés.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold" style="background:rgba(232,153,141,0.15); color:#8e4639;">✦</span>
+              <span style="color:#444;"><strong>Bienveillance exigeante</strong> — encourager sans baisser les attentes.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold" style="background:rgba(245,200,66,0.15); color:#8b6c18;">✦</span>
+              <span style="color:#444;"><strong>Langue &amp; culture</strong> — valoriser le plurilinguisme et l'identité des élèves.</span>
+            </li>
+          </ul>
+          <div class="mt-4 rounded-xl p-4 info-neutral">
+            <p class="text-xs font-semibold" style="color:#2E2E2E;">Deux situations qui me ressemblent</p>
+            <ul class="mt-2 space-y-1.5 text-xs list-disc pl-4" style="color:#555;">
+              <li>
+                <strong>Équité (primaire)</strong> : si un élève n'ose pas parler en langue seconde, je propose d'abord un modèle, des supports visuels,
+                puis un essai en duo. L'objectif reste le même, mais le chemin est adapté.
+              </li>
+              <li>
+                <strong>Transparence</strong> : je reformule les critères avec des exemples concrets ("Je me fais comprendre", "J'utilise 3 mots ciblés")
+                et je vérifie la compréhension des attentes avant de commencer.
+              </li>
+            </ul>
+            <p class="mt-2 text-xs" style="color:#555;">
+              Mon expérience en Tunisie et en France m'a appris qu'une classe a besoin de <strong>cadre</strong> et de <strong>chaleur humaine</strong>.
+              Aujourd'hui, en m'intégrant en Ontario, je découvre d'autres repères; je les accueille avec curiosité, tout en me posant la question :
+              <em>est-ce que cela rend l'apprentissage plus clair et plus accessible pour les élèves?</em>
+            </p>
+          </div>
+        </article>
+
+        <article class="card-hover overflow-hidden rounded-card bg-white p-6" style="border:1px solid rgba(123,174,127,0.10);">
+          <h3 class="font-heading text-lg font-semibold" style="color:#2E2E2E;">3 — Intentions pédagogiques</h3>
+          <p class="mt-3 text-sm leading-[1.7]" style="color:#555;">
+            Utiliser l'évaluation pour <strong>mieux enseigner</strong> et rendre <strong>l'élève acteur</strong> :
+            s'autoévaluer, comprendre ses erreurs, se fixer des objectifs réalistes.
+          </p>
+          <p class="mt-3 text-sm leading-[1.7]" style="color:#555;">
+            Dans un système que je découvre, je me fixe une intention simple : <strong>faire peu, mais le faire clairement</strong>.
+            Des routines logiques, répétées, qui rassurent les élèves et me permettent de voir la progression sans alourdir la classe.
+          </p>
+          <div class="mt-4 grid gap-3 sm:grid-cols-2">
+            <div class="rounded-xl p-4 info-sage">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#4d8051;">En classe</p>
+              <p class="mt-1 text-xs" style="color:#555;">Rituels courts : critères visibles, observation ciblée, mini-bilan (1–2 min), ajustement immédiat.</p>
+            </div>
+            <div class="rounded-xl p-4 info-gold">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#8b6c18;">Pour l'élève</p>
+              <p class="mt-1 text-xs" style="color:#555;">Objectif simple, critères compris, traces choisies, autoévaluation guidée, droit à l'erreur.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-hover overflow-hidden rounded-card bg-white p-6" style="border:1px solid rgba(123,174,127,0.10);">
+          <h3 class="font-heading text-lg font-semibold" style="color:#2E2E2E;">4 — Rétroaction &amp; communication</h3>
+          <p class="mt-3 text-sm leading-[1.7]" style="color:#555;">
+            Je privilégie une rétroaction <strong>claire</strong>, <strong>actionnable</strong> et <strong>respectueuse</strong>,
+            adaptée à l'âge et au niveau linguistique. Comme je l'ai appris dans le CFORP Fascicule 4 et chez Brookhart (2010),
+            la rétroaction varie selon le <em>temps</em>, la <em>quantité</em>, le <em>mode</em> et les <em>destinataires</em>.
+            J'intègre aussi le concept de <strong>feedforward</strong> : orienter vers l'amélioration future plutôt que simplement corriger.
+          </p>
+          <div class="mt-4 rounded-xl p-4 info-neutral">
+            <ul class="mt-2 space-y-2 text-xs list-disc pl-4" style="color:#555;">
+              <li>
+                <strong>Sur une production</strong> : « Tu t'es fait comprendre grâce à des phrases simples et à une bonne prononciation.
+                Prochaine étape : ajoute 2 connecteurs (and / because) pour mieux lier tes idées. »
+              </li>
+              <li>
+                <strong>Message aux familles</strong> : « Cette semaine, nous avons travaillé la prise de parole.
+                Votre enfant progresse lorsqu'il/elle s'appuie sur un modèle et ose essayer.
+                À la maison, vous pouvez l'encourager à dire 2 phrases courtes sur sa journée. »
+              </li>
+              <li>
+                <strong>Objectif simple (type SMART)</strong> : « D'ici vendredi, je pourrai présenter mon sujet en 4 phrases,
+                en utilisant 3 mots nouveaux de la leçon, avec un volume de voix adapté. »
+              </li>
+            </ul>
+            <p class="mt-2 text-xs" style="color:#555;">
+              Mon repère : une rétroaction qui respecte l'élève et qui <strong>ouvre une action</strong> (quoi faire ensuite),
+              plutôt qu'une liste d'erreurs. Je reste attentive à ce qui est réaliste dans le temps de classe.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="section-divider">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <path d="M0,15 C150,35 350,5 500,20 C650,35 850,5 1000,20 C1100,30 1170,15 1200,18" stroke="#F5C842" stroke-width="1.5" fill="none" opacity="0.35"/>
+        <path d="M0,25 C200,10 400,35 600,20 C800,5 1000,35 1200,22" stroke="#7BAE7F" stroke-width="1" fill="none" opacity="0.25"/>
+      </svg>
+    </div>
+
+    <!-- ╔═══════════════════════════════╗
+         ║     ACTIVITÉS & PRATIQUES     ║
+         ╚═══════════════════════════════╝ -->
+    <section id="activites" class="section-warm scroll-mt-20 py-12">
+      <div class="mx-auto max-w-6xl px-4">
+
+      <div class="section-heading">
+        <h2 class="section-title font-heading text-2xl font-bold tracking-tight" style="color:#2E2E2E;">
+          <i data-lucide="clipboard-list" class="mb-1 mr-2 inline h-6 w-6" style="color:#7BAE7F;"></i>Mes Activités &amp; Pratiques
+        </h2>
+        <p class="mt-2 max-w-2xl text-sm" style="color:#666;">Productions réalisées dans le cadre du cours : analyse de pratiques évaluatives, planification à rebours et critères d'évaluation adaptés au curriculum ontarien.</p>
+      </div>
+
+      <div class="mt-10 grid gap-8 lg:grid-cols-3">
+
+        <!-- ── Activité 1 : P1.1 ── -->
+        <article class="card-hover flex flex-col overflow-hidden rounded-card bg-white" style="border:1px solid rgba(123,174,127,0.10);">
+          <div class="border-b p-5" style="border-color:rgba(123,174,127,0.1);">
+            <span class="badge-sage inline-block rounded-md px-2 py-0.5 text-xs font-semibold">P1.1 — Travail d'équipe</span>
+            <h3 class="mt-2 font-heading text-base font-semibold" style="color:#2E2E2E;">Analyse des pratiques évaluatives</h3>
+            <p class="mt-1 text-sm" style="color:#666;">Scénario interdisciplinaire — Carnet 5 : Effets des changements climatiques sur les autochtones (Perspectives autochtones).</p>
+          </div>
+          <div class="flex flex-1 flex-col gap-3 p-5">
+            <div class="rounded-lg p-3 info-sage">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#4d8051;">Équipe</p>
+              <p class="mt-0.5 text-xs" style="color:#555;">Sophie Kinene, Pierrette Nkema &amp; Jihene Romdhane</p>
+            </div>
+            <div class="rounded-lg p-3 info-neutral">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#888;">Mandat</p>
+              <ul class="mt-1 space-y-1 text-xs list-disc pl-4" style="color:#555;">
+                <li>Survoler l'activité du carnet pédagogique 5.</li>
+                <li>Proposer des stratégies d'évaluation (français &amp; études sociales) selon les intentions et les types d'évaluation.</li>
+                <li>Élaborer un minimum de 3 instruments de mesure pertinents.</li>
+              </ul>
+            </div>
+            <div class="rounded-lg p-3 info-gold">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#8b6c18;">Instruments créés (annexes)</p>
+              <ul class="mt-1 space-y-1 text-xs list-disc pl-4" style="color:#555;">
+                <li><strong>A</strong> — Grille diagnostique du genre informatif (français), inspirée du CFORP.</li>
+                <li><strong>B</strong> — Outil diagnostique de représentations initiales (études sociales), inspiré de <em>Faire croître le succès</em>.</li>
+                <li><strong>C</strong> — Grille d'observation formative (français &amp; études sociales), inspirée du CFORP.</li>
+                <li><strong>D</strong> — Outil d'autoévaluation métacognitive (français), inspiré du MÉO.</li>
+              </ul>
+            </div>
+            <div class="rounded-lg p-3 info-rose">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#8e4639;">Ce que j'en retiens</p>
+              <p class="mt-1 text-xs" style="color:#555;">
+                Ce travail m'a permis de comprendre que l'évaluation ne se limite pas à une seule note finale : on peut trianguler les preuves (observation, production écrite, communication orale) pour obtenir un portrait plus juste de l'élève. J'ai aussi compris l'importance de lier chaque instrument à une intention d'évaluation claire (diagnostique, formative ou sommative).
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Activité 2 : P2 ── -->
+        <article class="card-hover flex flex-col overflow-hidden rounded-card bg-white" style="border:1px solid rgba(245,200,66,0.12);">
+          <div class="border-b p-5" style="border-color:rgba(245,200,66,0.1);">
+            <span class="badge-gold inline-block rounded-md px-2 py-0.5 text-xs font-semibold">P2 — Travail d'équipe</span>
+            <h3 class="mt-2 font-heading text-base font-semibold" style="color:#2E2E2E;">Planification à rebours — Maths 6<sup>e</sup> &amp; Français</h3>
+            <p class="mt-1 text-sm" style="color:#666;">Unité d'apprentissage intégrant la littératie financière et le texte argumentatif.</p>
+          </div>
+          <div class="flex flex-1 flex-col gap-3 p-5">
+            <div class="rounded-lg p-3 info-gold">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#8b6c18;">Sujet de la tâche sommative</p>
+              <p class="mt-0.5 text-xs" style="color:#555;">Écrire un texte pour convaincre ses parents d'acheter un objet ou un service en expliquant pourquoi c'est un bon choix financier (intégration français–mathématiques).</p>
+            </div>
+            <div class="rounded-lg p-3 info-sage">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#4d8051;">Structure de la planification</p>
+              <ul class="mt-1 space-y-1 text-xs list-disc pl-4" style="color:#555;">
+                <li><strong>Partie 1</strong> — Apprentissages ciblés par domaine.</li>
+                <li><strong>Partie 2</strong> — Évaluation de l'apprentissage (EDA) sommative.</li>
+                <li><strong>Partie 3</strong> — Séquence des leçons (ESA + ETA + instruments).</li>
+                <li><strong>Partie 4</strong> — Différenciation pédagogique (contenu, processus, produit).</li>
+                <li><strong>Partie 5</strong> — Instruments de mesure (≥ 3 ESA, 1 ETA, 2 EDA).</li>
+                <li><strong>Partie 6</strong> — Communication du rendement.</li>
+              </ul>
+            </div>
+            <div class="rounded-lg p-3 info-rose">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#8e4639;">Différenciation appliquée</p>
+              <ul class="mt-1 space-y-1 text-xs list-disc pl-4" style="color:#555;">
+                <li><strong>Contenu</strong> : textes modèles simplifiés, schémas visuels, glossaire bilingue pour élèves plurilingues.</li>
+                <li><strong>Processus</strong> : accompagnement en petit groupe, découpage en étapes, travail en dyade, organisateurs graphiques.</li>
+                <li><strong>Produit</strong> : texte respectant les exigences minimales + supports visuels ; évaluation centrée sur la clarté des idées pour les élèves plurilingues.</li>
+              </ul>
+            </div>
+            <div class="info-neutral rounded-lg p-3">
+              <p class="text-xs" style="color:#555;">
+                <strong>Ce que j'en retiens :</strong> La planification à rebours m'a appris à commencer par les résultats d'apprentissage visés, puis à définir les preuves d'apprentissage attendues, et enfin à concevoir les activités d'enseignement. Cette démarche rend chaque leçon intentionnelle et cohérente.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Activité 3 : Critères d'évaluation ── -->
+        <article class="card-hover flex flex-col overflow-hidden rounded-card bg-white" style="border:1px solid rgba(232,153,141,0.12);">
+          <div class="border-b p-5" style="border-color:rgba(232,153,141,0.1);">
+            <span class="badge-rose inline-block rounded-md px-2 py-0.5 text-xs font-semibold">Artefact du cours</span>
+            <h3 class="mt-2 font-heading text-base font-semibold" style="color:#2E2E2E;">Critères d'évaluation — Curriculum Ontario</h3>
+            <p class="mt-1 text-sm" style="color:#666;">Grilles adaptées aux 4 compétences du curriculum pour plusieurs matières.</p>
+          </div>
+          <div class="flex flex-1 flex-col gap-3 p-5">
+            <p class="text-xs" style="color:#555;">J'ai étudié et adapté les critères d'évaluation conformément aux 4 compétences du curriculum ontarien :</p>
+            <div class="grid grid-cols-2 gap-2">
+              <div class="rounded-lg px-3 py-2 info-sage">
+                <p class="text-[11px] font-bold" style="color:#3b6640;">CC</p>
+                <p class="text-[10px]" style="color:#555;">Connaissance &amp; Compréhension</p>
+              </div>
+              <div class="rounded-lg px-3 py-2 info-gold">
+                <p class="text-[11px] font-bold" style="color:#8b6c18;">HP</p>
+                <p class="text-[10px]" style="color:#555;">Habiletés de la pensée</p>
+              </div>
+              <div class="rounded-lg px-3 py-2 info-rose">
+                <p class="text-[11px] font-bold" style="color:#8e4639;">CO</p>
+                <p class="text-[10px]" style="color:#555;">Communication</p>
+              </div>
+              <div class="rounded-lg px-3 py-2 info-neutral">
+                <p class="text-[11px] font-bold" style="color:#555;">MA</p>
+                <p class="text-[10px]" style="color:#555;">Mise en application</p>
+              </div>
+            </div>
+            <div class="rounded-lg p-3 info-neutral">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#888;">Matières couvertes</p>
+              <ul class="mt-1 space-y-1 text-xs list-disc pl-4" style="color:#555;">
+                <li>Français (lecture, écriture, communication orale formelle &amp; informelle)</li>
+                <li>Mathématiques (numératie, MTH1W domaine C)</li>
+                <li>Sciences &amp; technologie</li>
+                <li>Arts visuels &amp; musique</li>
+              </ul>
+            </div>
+            <div class="rounded-lg p-3 info-sage">
+              <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#4d8051;">Principe clé des grilles adaptées</p>
+              <p class="mt-1 text-xs" style="color:#555;">
+                Le descripteur principal est <strong>l'efficacité</strong> (capacité de réaliser entièrement le résultat attendu). L'enseignant peut aussi utiliser : clarté, exactitude, logique, pertinence, cohérence, souplesse, profondeur, envergure — selon la compétence et le critère visés.
+              </p>
+            </div>
+            <div class="info-neutral rounded-lg p-3">
+              <p class="text-xs" style="color:#555;">
+                <strong>Ce que j'en retiens :</strong> Formuler des critères clairs, observables et liés aux attentes du curriculum est essentiel pour une évaluation juste. Les critères doivent être partagés avec les élèves <em>avant</em> la tâche et servir de repère pour la rétroaction.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Vidéo d'activité -->
+      <div class="mt-10 overflow-hidden rounded-card bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
+        <h3 class="section-heading font-heading text-lg font-semibold" style="color:#2E2E2E;">
+          <i data-lucide="video" class="mb-0.5 mr-2 inline h-5 w-5" style="color:#F5C842;"></i>Artefact vidéo — Activité en classe
+        </h3>
+        <p class="mt-2 max-w-2xl text-sm" style="color:#666;">Vidéo illustrant une activité pédagogique réalisée dans le cadre du cours.</p>
+        <div class="mt-4">
+          <video class="w-full rounded-xl border bg-black/5" style="border-color:rgba(123,174,127,0.2); max-height:480px;" controls>
+            <source src="assets/activité1.mp4" type="video/mp4" />
+            Votre navigateur ne prend pas en charge la lecture vidéo.
+          </video>
+        </div>
+      </div>
+
+      <!-- Différenciation pédagogique -->
+      <div class="mt-10 overflow-hidden rounded-card bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
+        <h3 class="section-heading font-heading text-lg font-semibold" style="color:#2E2E2E;">
+          <i data-lucide="users" class="mb-0.5 mr-2 inline h-5 w-5" style="color:#E8998D;"></i>Différenciation pédagogique — Synthèse du cours 7
+        </h3>
+        <p class="mt-2 max-w-2xl text-sm" style="color:#666;">
+          « La différenciation pédagogique est une approche souple et proactive qui permet d'ajuster les stratégies pédagogiques en fonction des niveaux de préparation, des champs d'intérêt et des préférences des élèves en matière d'apprentissage. » — <em>Faire croître le succès</em>, p. 92-93
+        </p>
+        <div class="mt-5 grid gap-5 md:grid-cols-3">
+
+          <article class="rounded-xl p-5" style="background:#f9f7f2; border:1px solid rgba(123,174,127,0.12);">
+            <div class="mb-3 flex items-center gap-2">
+              <span class="flex h-9 w-9 items-center justify-center rounded-xl text-base" style="background:rgba(123,174,127,0.15);">📚</span>
+              <h4 class="font-heading text-sm font-semibold" style="color:#2E2E2E;">Contenu</h4>
+            </div>
+            <ul class="space-y-1 text-xs list-disc pl-4" style="color:#555;">
+              <li>Enseigner ou revoir le vocabulaire lié à la matière.</li>
+              <li>Offrir des textes selon le niveau de lecture.</li>
+              <li>Fournir des référentiels et des outils organisateurs.</li>
+              <li>Encourager l'utilisation des TIC.</li>
+            </ul>
+          </article>
+
+          <article class="rounded-xl p-5" style="background:#f9f7f2; border:1px solid rgba(245,200,66,0.12);">
+            <div class="mb-3 flex items-center gap-2">
+              <span class="flex h-9 w-9 items-center justify-center rounded-xl text-base" style="background:rgba(245,200,66,0.15);">⚙️</span>
+              <h4 class="font-heading text-sm font-semibold" style="color:#2E2E2E;">Processus</h4>
+            </div>
+            <ul class="space-y-1 text-xs list-disc pl-4" style="color:#555;">
+              <li>Favoriser l'enseignement explicite pour les apprentissages clés.</li>
+              <li>Offrir un niveau de soutien approprié (petit groupe, dyade).</li>
+              <li>Faire appel à la métacognition (retour sur les stratégies).</li>
+              <li>Favoriser les échanges d'idées et d'opinions.</li>
+            </ul>
+          </article>
+
+          <article class="rounded-xl p-5" style="background:#f9f7f2; border:1px solid rgba(232,153,141,0.12);">
+            <div class="mb-3 flex items-center gap-2">
+              <span class="flex h-9 w-9 items-center justify-center rounded-xl text-base" style="background:rgba(232,153,141,0.12);">🎨</span>
+              <h4 class="font-heading text-sm font-semibold" style="color:#2E2E2E;">Productions</h4>
+            </div>
+            <ul class="space-y-1 text-xs list-disc pl-4" style="color:#555;">
+              <li>Cibler des attentes précises.</li>
+              <li>Permettre des productions variées à divers niveaux de complexité.</li>
+              <li>Offrir la possibilité de démontrer sa compréhension sous différentes formes (multimédia, croquis, oral).</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="section-divider">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <path d="M0,20 C300,40 600,0 900,25 C1050,35 1150,15 1200,20" stroke="#E8998D" stroke-width="1.5" fill="none" opacity="0.35"/>
+        <path d="M0,28 C200,10 500,40 800,18 C1000,5 1150,30 1200,22" stroke="#F5C842" stroke-width="1" fill="none" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <!-- ╔═══════════════════════════════╗
+         ║       BOÎTE À OUTILS          ║
+         ╚═══════════════════════════════╝ -->
+    <section id="outils" class="section-sage scroll-mt-20 py-12">
+      <div class="mx-auto max-w-6xl px-4">
+
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div class="section-heading">
+          <h2 class="section-title font-heading text-2xl font-bold tracking-tight" style="color:#2E2E2E;">
+            <i data-lucide="wrench" class="mb-1 mr-2 inline h-6 w-6" style="color:#F5C842;"></i>Ma Boîte à Outils
+          </h2>
+          <p class="mt-2 text-sm" style="color:#666;">Tableau interactif — cliquez sur une ligne pour afficher description et conseils d'usage.</p>
+        </div>
+        <span class="badge-sage self-start rounded-full px-3 py-1 text-xs font-semibold sm:self-auto">Cliquez pour lire ↓</span>
+      </div>
+
+      <div class="mt-8 grid gap-6 lg:grid-cols-12">
+
+        <!-- Tableau -->
+        <div class="lg:col-span-7">
+          <div class="overflow-hidden rounded-card bg-white" style="border:1px solid rgba(123,174,127,0.10);">
+            <div class="border-b px-5 py-4" style="border-color:rgba(123,174,127,0.08); background:#f9f7f2;">
+              <p class="font-heading text-sm font-semibold" style="color:#2E2E2E;">Outils &amp; stratégies d'évaluation</p>
+              <p class="text-xs" style="color:#999;">10 outils tirés des ressources et productions du cours.</p>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="min-w-full text-left text-sm">
+                <thead class="border-b text-xs uppercase tracking-wider" style="border-color:rgba(123,174,127,0.1); color:#999;">
+                  <tr>
+                    <th class="px-5 py-3">Outil</th>
+                    <th class="px-5 py-3">Quand</th>
+                    <th class="px-5 py-3">But</th>
+                  </tr>
+                </thead>
+                <tbody id="toolTable" class="divide-y" style="--tw-divide-opacity:1; --tw-divide-color:rgba(123,174,127,0.08);"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panneau détail -->
+        <aside class="lg:col-span-5">
+          <div class="sticky top-24 overflow-hidden rounded-card bg-white p-5 shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
+            <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#999;">Détails</p>
+            <h3 id="toolTitle" class="mt-1 font-heading text-lg font-semibold" style="color:#4d8051;">Sélectionnez un outil</h3>
+            <p id="toolDesc" class="mt-2 text-sm leading-[1.7]" style="color:#555;">
+              Cliquez sur une ligne du tableau pour afficher la description.
+            </p>
+
+          </div>
+        </aside>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="section-divider">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <path d="M0,22 C200,40 400,5 600,22 C800,38 1000,8 1200,20" stroke="#7BAE7F" stroke-width="1.5" fill="none" opacity="0.35"/>
+        <path d="M0,18 C300,35 700,5 1000,25 C1100,32 1170,18 1200,20" stroke="#E8998D" stroke-width="1" fill="none" opacity="0.25"/>
+      </svg>
+    </div>
+
+    <!-- ╔═══════════════════════════════╗
+         ║      JOURNAL DE BORD          ║
+         ╚═══════════════════════════════╝ -->
+    <section id="journal" class="section-warm scroll-mt-20 py-12">
+      <div class="mx-auto max-w-6xl px-4">
+
+      <div class="section-heading">
+        <h2 class="section-title font-heading text-2xl font-bold tracking-tight" style="color:#2E2E2E;">
+          <i data-lucide="book-open" class="mb-1 mr-2 inline h-6 w-6" style="color:#E8998D;"></i>Mon Journal de Bord &amp; Réflexion
+        </h2>
+        <p class="mt-2 text-sm" style="color:#666;">Forces, défis, apprentissages, décisions — et un espace de réflexion multimodale.</p>
+      </div>
+
+      <!-- ═══ SEMAINE 1 ═══ -->
+      <div class="mt-10" id="journal-s1">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-xl font-bold" style="background:rgba(123,174,127,0.15); color:#3b6640;">1</span>
+          <div>
+            <h3 class="font-heading text-xl font-bold" style="color:#2E2E2E;">Semaine 1 — Découverte du système ontarien</h3>
+            <p class="text-sm mt-0.5" style="color:#888;">Évaluation au service de l'apprentissage · Stratégies d'apprentissage · Cadre de référence</p>
+          </div>
+        </div>
+
+        <!-- Forces & Défis -->
+        <div class="grid gap-4 sm:grid-cols-2 mb-6">
+          <div class="rounded-xl p-4" style="background:rgba(123,174,127,0.06); border:1px solid rgba(123,174,127,0.12);">
+            <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color:#4d8051;">✦ Forces identifiées</p>
+            <ul class="space-y-1 text-sm list-disc pl-4" style="color:#555;">
+              <li>Relation éducative chaleureuse</li>
+              <li>Gestion du climat de classe</li>
+              <li>Plurilinguisme (arabe, français, anglais)</li>
+              <li>Expérience internationale (Tunisie, France, Canada)</li>
+            </ul>
+          </div>
+          <div class="rounded-xl p-4" style="background:rgba(232,153,141,0.06); border:1px solid rgba(232,153,141,0.12);">
+            <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color:#8e4639;">✦ Défis identifiés</p>
+            <ul class="space-y-1 text-sm list-disc pl-4" style="color:#555;">
+              <li>Découvrir le vocabulaire professionnel ontarien</li>
+              <li>Objectiver les critères d'évaluation</li>
+              <li>Passer d'une évaluation de résultats à une évaluation formative</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.12);">
+          <div class="text-sm leading-relaxed" style="color:#555;">
+
+            <h4 class="font-heading font-semibold text-base mb-3" style="color:#2E2E2E;">Une nouvelle vision de l'évaluation</h4>
+            <p>En arrivant dans le système ontarien, ma conception de l'évaluation était fortement marquée par mon expérience en Tunisie et en France, où l'évaluation était surtout un outil de mesure des résultats finaux — des examens, des notes, un verdict. Cette première semaine a profondément bousculé cette vision. La lecture de <em>Faire croître le succès</em> (MÉO, 2010) m'a permis de comprendre que l'évaluation, dans le contexte ontarien, se déploie en trois dimensions complémentaires : <strong>l'évaluation au service de l'apprentissage</strong> (diagnostique et formative, pour guider l'élève et ajuster l'enseignement), <strong>l'évaluation en tant qu'apprentissage</strong> (l'élève devient acteur de son propre suivi, développe sa métacognition) et <strong>l'évaluation de l'apprentissage</strong> (sommative, pour attester le niveau atteint).</p>
+            <p class="mt-3">Ce qui m'a particulièrement marquée, c'est l'importance accordée à la rétroaction et à l'accompagnement dans ce processus. L'évaluation n'est plus un moment isolé à la fin d'une séquence, mais un fil conducteur qui traverse l'ensemble de l'enseignement. Ce changement de perspective m'amène à questionner ma propre pratique : comment puis-je intégrer cette dimension formative dans chacune de mes interventions pédagogiques, et pas seulement lors des moments « officiels » d'évaluation ?</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Les stratégies d'apprentissage : un cadre structurant</h4>
+            <p>La réflexion sur les stratégies d'apprentissage, notamment à travers le cadre de référence simplifié proposé par Bégin (2008), a enrichi ma compréhension des outils cognitifs que les élèves mobilisent. L'auteur ne se contente pas d'énumérer des stratégies, mais propose une taxonomie claire en <strong>trois grandes catégories</strong> :</p>
+            <ul class="mt-2 mb-3 space-y-1 list-disc pl-5">
+              <li><strong>Stratégies métacognitives</strong> — la capacité de l'élève à planifier, surveiller et évaluer sa propre démarche d'apprentissage.</li>
+              <li><strong>Stratégies de traitement cognitif</strong> — les opérations mentales pour traiter, organiser et retenir l'information (sélection, répétition, élaboration, organisation).</li>
+              <li><strong>Stratégies d'exécution</strong> — les moyens concrets que l'élève utilise pour réaliser une tâche (évaluer la tâche, vérifier, produire).</li>
+            </ul>
+            <p>Ce qui m'a particulièrement intéressée, c'est l'insistance sur la <strong>clarté conceptuelle</strong> : dans le milieu éducatif, le terme « stratégie » est parfois utilisé de manière vague. Cet article montre qu'il est essentiel de fixer des définitions précises pour que l'enseignant sache exactement ce qu'il attend des élèves, comment l'observer et comment le soutenir. En même temps, j'ai conscience que la mise en application représente un défi considérable : identifier, planifier et observer l'utilisation de stratégies d'apprentissage chez chaque élève demande du temps, de l'observation et un jugement professionnel solide — surtout dans une classe nombreuse avec des profils d'apprenants très variés.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Bilan de la semaine</h4>
+            <p>Cette première semaine a posé les fondations de ma réflexion : je passe d'une conception de l'évaluation centrée sur les résultats à une approche <strong>intégrée, continue et formative</strong>. La découverte du cadre ontarien, avec sa triple dimension évaluative, et la taxonomie des stratégies d'apprentissage me donnent des repères solides pour la suite. Je réalise aussi que cette transformation de ma pratique ne sera pas instantanée — elle demande de la pratique, de l'accompagnement professionnel et une volonté constante de remettre en question mes habitudes.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-10 border-0" style="height:1px; background:linear-gradient(to right, transparent, rgba(245,200,66,0.4), transparent);">
+
+      <!-- ═══ SEMAINE 2 ═══ -->
+      <div id="journal-s2">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-xl font-bold" style="background:rgba(245,200,66,0.15); color:#8b6c18;">2</span>
+          <div>
+            <h3 class="font-heading text-xl font-bold" style="color:#2E2E2E;">Semaine 2 — Preuves d'apprentissage &amp; rétroaction</h3>
+            <p class="text-sm mt-0.5" style="color:#888;">Triangulation · Rétroaction descriptive · Types d'évaluation · Feedforward · Outils numériques</p>
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-white p-6 shadow-sm" style="border:1px solid rgba(245,200,66,0.15);">
+          <div class="text-sm leading-relaxed" style="color:#555;">
+
+            <h4 class="font-heading font-semibold text-base mb-3" style="color:#2E2E2E;">La preuve d'apprentissage et la triangulation</h4>
+            <p>Cette semaine a approfondi une question fondamentale : <strong>comment savoir ce que l'élève a réellement appris ?</strong> J'ai compris que la preuve d'apprentissage doit être directement liée à l'objectif d'apprentissage ciblé — l'enseignant doit réfléchir à ce que l'élève doit démontrer comme connaissance, compétence ou expression de compréhension. Le concept de <strong>triangulation des preuves</strong> m'a paru particulièrement pertinent : croiser les observations en classe, les productions de l'élève et les communications orales permet d'obtenir une image bien plus complète et fiable de l'apprentissage qu'un seul examen écrit ne pourrait le faire.</p>
+            <p class="mt-3">Comme enseignante ayant travaillé en Tunisie et en France, où l'évaluation était souvent centrée sur les productions écrites ou les examens, je découvre ici une approche plus globale qui cherche à comprendre l'apprentissage de l'élève dans plusieurs contextes et sous plusieurs angles. En même temps, je réalise que la collecte de preuves d'apprentissage demande beaucoup d'attention et d'organisation, et je m'interroge sur comment un enseignant peut documenter efficacement ces preuves tout en continuant à enseigner et à soutenir les élèves pendant les activités de classe.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">L'alignement pédagogique et les types d'évaluation</h4>
+            <p>J'ai également approfondi l'importance de la <strong>cohérence entre les objectifs d'apprentissage, les activités proposées et l'évaluation</strong>. Cet alignement pédagogique donne un sens clair à l'enseignement et évite que les activités en classe soient déconnectées des apprentissages ciblés. La variété des stratégies pédagogiques découvertes — le Think-Pair-Share, le World Café, la collaboration, la réflexion individuelle — me montre une vision de l'enseignement qui valorise davantage l'interaction et la construction collective du savoir, ce qui diffère des approches plus magistrales que j'avais utilisées dans mon parcours antérieur.</p>
+            <p class="mt-3">L'étude des types d'évaluation m'a donné une vision globale des trois grandes formes : l'<strong>évaluation diagnostique</strong> (connaître les acquis d'entrée avant d'adapter l'enseignement), l'<strong>évaluation formative</strong> (outil de progression qui aide l'apprenant à se situer et guide l'enseignant dans ses interventions), et l'<strong>évaluation sommative</strong> (mesure des acquis en fin de processus, alignée sur les objectifs). La diversité des modalités possibles — auto-évaluation, co-évaluation, évaluation par les pairs, productions écrites, exposés, jeux de rôle, portfolios, vidéos — m'a convaincue que l'évaluation peut prendre des formes très variées et adaptées à différents contextes pédagogiques. L'évaluation n'est pas un moment isolé, mais un <strong>processus intégré à l'enseignement et à l'apprentissage</strong>.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">La rétroaction : un outil stratégique et multidimensionnel</h4>
+            <p>Le cœur de cette semaine a porté sur la rétroaction, que j'ai découverte sous un angle beaucoup plus riche que ce que je pratiquais auparavant. La rétroaction ne se limite pas à donner une note ou un commentaire superficiel : c'est un <strong>outil de communication pédagogique</strong> qui soutient la motivation, l'autonomie et la progression des élèves. Une rétroaction efficace doit indiquer clairement ce qui a été bien fait, préciser ce qui doit être amélioré et donner des suggestions concrètes pour progresser.</p>
+            <p class="mt-3">J'ai appris à distinguer <strong>quatre dimensions</strong> essentielles de la rétroaction :</p>
+            <ul class="mt-2 mb-3 space-y-1.5 list-disc pl-5">
+              <li><strong>Le temps</strong> — rétroaction immédiate pour les connaissances factuelles, différée pour analyser plus en profondeur le raisonnement ou la démarche de l'élève. Elle peut être synchrone ou asynchrone, ce qui élargit les possibilités, surtout avec les outils numériques.</li>
+              <li><strong>La quantité</strong> — ne pas tout commenter, mais mettre l'accent sur ce qui est essentiel et relié aux apprentissages principaux.</li>
+              <li><strong>Le mode</strong> — oral, écrit, audio, vidéo ou visuel. Montrer un exemple ou faire une démonstration peut être plus efficace qu'un simple commentaire écrit. Toujours commenter la production, et non l'élève lui-même.</li>
+              <li><strong>Les destinataires</strong> — la rétroaction individuelle montre à chaque élève que son apprentissage compte ; la rétroaction de groupe est utile quand un concept doit être revu collectivement.</li>
+            </ul>
+            <p>Au-delà de ces dimensions, j'ai découvert quatre <strong>types de rétroaction</strong> selon leur fonction pédagogique : la rétroaction <strong>cognitive</strong> (corriger les erreurs ou préciser des idées), <strong>méthodologique</strong> (aider l'élève à structurer son travail), <strong>métacognitive</strong> (encourager la réflexion sur les stratégies utilisées) et <strong>affective</strong> (soutenir la motivation et construire une relation positive avec l'apprentissage).</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Le feedforward et les sources multiples de rétroaction</h4>
+            <p>Une notion qui a transformé ma compréhension est celle du <strong>feedforward</strong> : une rétroaction orientée vers l'amélioration future du travail, qui transforme l'évaluation en un outil de progression plutôt qu'en un simple bilan. Le ton du message compte énormément — il est préférable de proposer des suggestions d'amélioration plutôt que de souligner uniquement les erreurs. La distinction entre la rétroaction descriptive et le simple jugement du travail est essentielle : la rétroaction doit être <strong>descriptive, constructive et centrée sur le travail</strong>.</p>
+            <p class="mt-3">J'ai également compris que la rétroaction peut provenir de <strong>sources multiples</strong>, toutes complémentaires. La rétroaction des parents implique la famille dans le suivi (comparer deux travaux, portes ouvertes, expliquer les critères). La rétroaction des pairs favorise l'apprentissage collaboratif (présenter ses preuves à un camarade, discuter des cartes conceptuelles). L'autoévaluation développe l'autonomie et la métacognition (réflexion personnelle, bilan des apprentissages). Enfin, la rétroaction de l'enseignant guide et soutient (observation avec grille de critères, retour précis sur la performance). L'apprentissage est non linéaire — tâtonnements, essais-erreurs, hypothèses — et la rétroaction formative doit être <strong>immédiate, sans menace de sanction</strong>, descriptive et situationnelle.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Exemples concrets de rétroaction descriptive</h4>
+            <div class="grid gap-3 sm:grid-cols-2">
+              <div class="rounded-lg p-4" style="background:#fafaf5; border:1px solid rgba(245,200,66,0.1);">
+                <p class="text-xs font-semibold mb-1" style="color:#8b6c18;">Rétroaction cognitive</p>
+                <p class="text-sm" style="color:#555;">« Tu as bien identifié que le texte parle du sommeil et de son rôle dans la vie humaine et animale. Tu pourrais ajouter plus de détails sur la façon dont le cerveau "fait du ménage" pendant le sommeil pour montrer une compréhension plus complète. »</p>
+              </div>
+              <div class="rounded-lg p-4" style="background:#fafaf5; border:1px solid rgba(245,200,66,0.1);">
+                <p class="text-xs font-semibold mb-1" style="color:#8b6c18;">Rétroaction méthodologique</p>
+                <p class="text-sm" style="color:#555;">« J'apprécie que tu aies utilisé un schéma pour organiser les idées importantes. La prochaine fois, essaie de relier chaque idée principale à la question "De quoi parle-t-on ?" et "Qu'est-ce qu'on en dit ?". »</p>
+              </div>
+              <div class="rounded-lg p-4" style="background:#fafaf5; border:1px solid rgba(245,200,66,0.1);">
+                <p class="text-xs font-semibold mb-1" style="color:#8b6c18;">Rétroaction métacognitive</p>
+                <p class="text-sm" style="color:#555;">« Tu as montré que tu sais repérer les informations importantes. Pour aller plus loin, tu pourrais te demander : "Comment puis-je utiliser ces informations pour expliquer le texte à quelqu'un d'autre ?" »</p>
+              </div>
+              <div class="rounded-lg p-4" style="background:#fafaf5; border:1px solid rgba(245,200,66,0.1);">
+                <p class="text-xs font-semibold mb-1" style="color:#8b6c18;">Rétroaction affective</p>
+                <p class="text-sm" style="color:#555;">« Bravo pour ton travail ! Tu comprends bien le texte et tu appliques les stratégies enseignées. Continue à organiser tes idées et à réfléchir aux détails importants pour renforcer encore ton résumé. »</p>
+              </div>
+            </div>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Bilan de la semaine</h4>
+            <p>Cette semaine m'a fait réaliser que la rétroaction est un outil flexible et stratégique qui doit être réfléchi en fonction de la situation, de l'élève et du contenu. Dans ma pratique antérieure, j'avais souvent tendance à me concentrer sur les résultats sans toujours prendre le temps de formuler de façon constructive ce que l'élève pouvait faire pour s'améliorer. Les outils numériques (Kahoot, plateformes interactives), la diversité des modes de rétroaction et l'idée de faire participer les élèves eux-mêmes dans le processus d'évaluation élargissent considérablement mon répertoire pédagogique. Je suis maintenant plus attentive à l'importance de choisir des mots qui encouragent, qui guident et qui renforcent la confiance de l'élève dans sa capacité à apprendre.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-10 border-0" style="height:1px; background:linear-gradient(to right, transparent, rgba(232,153,141,0.4), transparent);">
+
+      <!-- ═══ SEMAINE 3 ═══ -->
+      <div id="journal-s3">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-xl font-bold" style="background:rgba(232,153,141,0.15); color:#8e4639;">3</span>
+          <div>
+            <h3 class="font-heading text-xl font-bold" style="color:#2E2E2E;">Semaine 3 — Planification à rebours &amp; notation</h3>
+            <p class="text-sm mt-0.5" style="color:#888;">Planification à rebours · Résultats d'apprentissage · Notation critériée · Jugement professionnel · Calibrage</p>
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-white p-6 shadow-sm" style="border:1px solid rgba(232,153,141,0.12);">
+          <div class="text-sm leading-relaxed" style="color:#555;">
+
+            <h4 class="font-heading font-semibold text-base mb-3" style="color:#2E2E2E;">Repenser la planification : partir de la fin</h4>
+            <p>Cette semaine a fondamentalement transformé ma manière de concevoir la planification pédagogique. Ayant enseigné en Tunisie et en France, j'avais l'habitude de planifier de façon linéaire : d'abord enseigner, puis évaluer à la fin. La <strong>planification à rebours</strong> m'a poussée à repositionner ma pensée : on commence par définir clairement les résultats d'apprentissage visés, ensuite on détermine ce que l'on attend comme preuves d'apprentissage, et enfin on conçoit les activités d'enseignement. On ne planifie plus pour « remplir du contenu », mais pour s'assurer que chaque activité mène quelque part de significatif.</p>
+            <p class="mt-3">Ce cadre est rendu opérationnel par <strong>quatre questions clés</strong> qui m'obligent à être intentionnelle dans mes choix :</p>
+            <ol class="mt-2 mb-3 space-y-1.5 list-decimal pl-5">
+              <li><strong>Que doivent apprendre les élèves ?</strong> — Commencer par les résultats d'apprentissage du curriculum.</li>
+              <li><strong>Comment saurai-je qu'ils ont appris ?</strong> — Penser à des preuves d'apprentissage réelles et variées.</li>
+              <li><strong>Comment j'organise l'enseignement ?</strong> — Concevoir des activités cohérentes avec ces preuves.</li>
+              <li><strong>Comment j'aide ceux qui n'apprennent pas encore ?</strong> — Réfléchir à la différenciation et au soutien ciblé.</li>
+            </ol>
+            <p>Ce qui ressort clairement, c'est que planifier une activité ne consiste pas seulement à penser à ce que les élèves vont <em>faire</em>, mais surtout à ce qu'ils vont <em>apprendre réellement</em> et comment je vais le mesurer. Les résultats d'apprentissage servent de feuille de route non seulement pour l'enseignant, mais aussi pour <strong>l'autorégulation des élèves</strong> : chaque élève sait ce qu'il doit atteindre et peut ajuster sa démarche en cours de route.</p>
+            <p class="mt-3">De plus, la planification à rebours ne se limite pas à préparer une évaluation finale — elle implique un <strong>suivi constant et ajusté</strong>, intégrant des évaluations diagnostiques, formatives et différenciées tout au long de la séquence. Cela me montre qu'une bonne planification nécessite de réfléchir aux étapes et aux adaptations qui permettront à tous les élèves de réussir, et pas seulement à la tâche finale. Ce qui me questionne encore, c'est la manière de gérer cette planification rigoureuse avec les imprévus de la classe — les besoins urgents de certains élèves, les interruptions, les moments où il faut revenir sur une notion plusieurs fois.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Notation, jugement professionnel et équité</h4>
+            <p>J'ai approfondi la compréhension de la notation comme <strong>processus pédagogique réfléchi</strong> et non comme simple acte technique. Le jugement professionnel joue un rôle central dans l'interprétation des performances des élèves : la note finale ne doit pas être un simple calcul mathématique, mais une interprétation réfléchie des preuves d'apprentissage (observations, travaux, tests, projets), en tenant particulièrement compte des <strong>performances récentes</strong> qui reflètent mieux l'apprentissage actuel de l'élève.</p>
+            <p class="mt-3">Le passage d'une évaluation relative (comparer les élèves entre eux) à une <strong>évaluation critériée</strong> (juger chaque élève selon des critères bien définis et uniformes à l'échelle provinciale) est crucial pour l'équité et la cohérence. Tous les travaux ne se valent pas ; l'enseignant doit pondérer les preuves en conséquence. La moyenne peut parfois donner un portrait inexact, surtout en présence de valeurs aberrantes — utiliser la <strong>médiane ou la valeur modale</strong>, combiné au jugement professionnel, permet de mieux représenter la réalité du rendement.</p>
+            <p class="mt-3">L'importance du <strong>feedback comme outil central de régulation des apprentissages</strong> est également soulignée : l'évaluation formative — lorsque l'enseignant précise les résultats attendus, informe l'élève de sa maîtrise et propose des pistes d'action corrective — constitue une approche efficace pour aider les élèves à progresser. La critique de l'approche strictement normative de notation (notes chiffrées sans rétroaction développée) m'a interpellée : cette approche peut renforcer des injustices et décourager les élèves. Des évaluations focalisées sur des <strong>critères clairs et des rétroactions significatives</strong> sont plus justes et favorisent la progression réelle.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Le calibrage : une pratique de développement professionnel</h4>
+            <p>Le calibrage et la notation ne sont pas de simples étapes mécaniques ; c'est une <strong>stratégie d'apprentissage professionnel continu</strong> pour les enseignants. Le processus implique : le recueil individuel de copies annotées et la sélection d'échantillons représentatifs de tous les niveaux de rendement ; la discussion collégiale autour du niveau de rendement pour confronter différentes interprétations des critères ; la justification explicite en utilisant les descripteurs de la grille pour argumenter le niveau attribué ; et l'alignement provincial en comparant les décisions avec la norme (niveau 3) pour garantir une notation cohérente à l'échelle du système.</p>
+            <p class="mt-3">L'évaluation à partir de critères n'est pas une démarche simple et nécessite une vraie réflexion professionnelle. L'usage de critères ne se limite pas à cocher une grille — c'est un processus qui demande une <strong>interprétation rigoureuse des preuves</strong>, une formulation précise des critères et une attention à la façon dont ces critères sont communiqués aux élèves. Formuler et appliquer des critères exige du temps et de l'entraînement : il faut s'assurer qu'ils sont compris de manière commune par tous les enseignants et par les élèves eux-mêmes. L'évaluation critériée est bien plus qu'une formalité administrative — c'est une <strong>composante pédagogique centrale</strong> qui conditionne la qualité des jugements professionnels, le sens de la rétroaction et l'équité dans l'évaluation.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Bilan de la semaine</h4>
+            <p>Cette semaine m'a donné des outils concrets pour planifier avec intention et évaluer avec rigueur. La planification à rebours, les quatre questions clés, le calibrage et l'évaluation critériée forment un ensemble cohérent qui me guide vers une pratique plus <strong>intentionnelle, transparente et équitable</strong>. Les recommandations sont claires : intégrer l'évaluation dès le début de la planification, expliciter les critères de réussite compréhensibles pour tous les élèves, et impliquer les élèves eux-mêmes dans l'acte d'évaluer. La mise en pratique de ces principes demande beaucoup de temps — c'est un défi organisationnel réel pour un enseignant débutant, mais aussi une compétence professionnelle à développer progressivement.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-10 border-0" style="height:1px; background:linear-gradient(to right, transparent, rgba(123,174,127,0.4), transparent);">
+
+      <!-- ═══ SEMAINE 4 ═══ -->
+      <div id="journal-s4">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-xl font-bold" style="background:rgba(123,174,127,0.15); color:#3b6640;">4</span>
+          <div>
+            <h3 class="font-heading text-xl font-bold" style="color:#2E2E2E;">Semaine 4 — Jugement professionnel, différenciation &amp; communication</h3>
+            <p class="text-sm mt-0.5" style="color:#888;">Jugement professionnel · Différenciation pédagogique · Pratiques inclusives · Bulletins · Communication avec les familles</p>
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.12);">
+          <div class="text-sm leading-relaxed" style="color:#555;">
+
+            <h4 class="font-heading font-semibold text-base mb-3" style="color:#2E2E2E;">Le jugement professionnel : une compétence, pas une intuition</h4>
+            <p>Cette dernière semaine a consolidé ma compréhension du <strong>jugement professionnel</strong> comme pilier de la pratique évaluative. Ce n'est pas une simple opinion ni une intuition subjective, mais un <strong>processus réfléchi</strong> qui conduit à une prise de décision éclairée, basée sur l'analyse des preuves d'apprentissage, des attentes du curriculum et du contexte scolaire. Les notes finales ne sont pas simplement des calculs mathématiques — elles nécessitent une interprétation réfléchie qui doit refléter la tendance générale du rendement, en tenant particulièrement compte des <strong>performances récentes</strong>.</p>
+            <p class="mt-3">Ce qui m'a marquée, c'est la clarification de <strong>pourquoi et comment</strong> utiliser son jugement professionnel de manière appropriée. Même si les enseignants doivent suivre des règles et des politiques, ils doivent également exercer leur jugement — par exemple pour choisir des outils d'évaluation pertinents ou adapter leurs décisions pédagogiques selon les besoins spécifiques d'un élève. Il ne s'agit pas d'appliquer des procédures de façon mécanique, mais d'interpréter des données de manière sérieuse et contextualisée. En tant que future enseignante, savoir que le jugement professionnel repose sur une démarche reconnue dans des documents officiels me rassure : c'est une <strong>compétence professionnelle</strong> qui se développe avec l'expérience et l'analyse continue, et qui me donne un cadre pour justifier mes décisions face à des collègues, des parents ou des administrateurs.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">La différenciation pédagogique : une posture professionnelle</h4>
+            <p>La différenciation pédagogique ne se limite pas à adapter le contenu — elle touche aussi aux <strong>processus et aux productions</strong>, ce qui demande une réflexion constante sur les stratégies pédagogiques utilisées. L'évaluation joue un rôle central dans cette démarche : l'évaluation au service de l'apprentissage, en tant qu'apprentissage et de l'apprentissage permet de suivre le progrès des élèves, de réajuster l'enseignement et d'offrir des interventions ciblées.</p>
+            <p class="mt-3">Ce qui m'a frappée, c'est que la différenciation pédagogique n'est pas une stratégie exceptionnelle réservée à certains élèves, mais une <strong>posture professionnelle</strong> qui guide la planification quotidienne. Il s'agit de <strong>partir de l'élève</strong> plutôt que de partir uniquement du contenu à enseigner. Cette approche ne demande pas nécessairement de changer les objectifs d'apprentissage, mais d'ajuster les moyens pour permettre à chaque élève d'avoir accès à la compréhension. Pour différencier efficacement, il ne suffit pas de préparer des tâches variées : il faut aussi <strong>observer, analyser et ajuster constamment</strong>.</p>
+            <p class="mt-3">Les capsules d'autoformation, conçues comme des parcours d'apprentissage auto-dirigés, offrent des <strong>stratégies concrètes</strong> — questions réflexives, outils, exemples de planification, approches différenciées — qui aident à connecter la théorie avec la réalité de la classe ontarienne. Il est toutefois important de rester attentive au risque de simplifier excessivement l'apprentissage sous prétexte de différenciation : l'<strong>équilibre entre soutien personnalisé et maintien des attentes académiques</strong> reste essentiel.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Pratiques inclusives et accessibilité</h4>
+            <p>J'ai pris conscience de l'étendue des stratégies qu'un enseignant peut mobiliser pour rendre ses cours <strong>inclusifs et accessibles à tous</strong>. Il ne s'agit pas seulement de différencier l'enseignement, mais de penser chaque aspect de la classe : la motivation, la participation, la mémorisation, l'attention et même l'accessibilité matérielle et technologique. L'approche centrée sur l'étudiant — respecter le rythme, les besoins et les styles d'apprentissage variés tout en maintenant des attentes élevées et des objectifs clairs — résonne profondément avec ma vision de l'enseignement.</p>
+            <p class="mt-3">Le rôle de l'enseignant est celui de <strong>facilitateur, guide et partenaire</strong> dans l'apprentissage, avec un regard empathique et chaleureux, une communication claire et une rétroaction régulière. La multiplicité des techniques proposées — cours inversés, activités collaboratives, outils numériques accessibles, révision avec les pairs — nécessite une planification réfléchie. Il ne suffit pas de connaître les stratégies : il faut les intégrer de manière cohérente pour soutenir la compréhension et la réussite de tous les étudiants.</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Bulletins, communication du rendement et relations avec les familles</h4>
+            <p>La préparation des bulletins ne se limite pas à attribuer une note : elle s'inscrit dans un <strong>processus pédagogique</strong> qui vise à décrire le développement des apprentissages de l'élève. L'évaluation en Ontario privilégie la cohérence entre l'enseignement, l'apprentissage et l'évaluation, et les bulletins doivent soutenir la progression de l'élève plutôt que simplement juger son rendement. La communication des attentes et l'observation continue des progrès font de la préparation des bulletins un acte réflexif qui exige de la logique, de la précision et un regard professionnel critique. Il est essentiel de transmettre une information pédagogique cohérente, humaine et utile.</p>
+            <p class="mt-3">La communication du rendement constitue une <strong>démarche de dialogue pédagogique</strong> avec les élèves et leurs familles. Il ne s'agit pas seulement de dire « il a réussi » ou « il n'a pas réussi », mais de décrire clairement ce que l'élève sait faire, ce qu'il apprend encore et comment il progresse. Ce type de communication formative aide l'élève à comprendre ses forces, ses défis et les prochaines étapes, et permet d'établir des <strong>stratégies d'appui personnalisées</strong>.</p>
+            <p class="mt-3">La qualité de la <strong>relation entre l'enseignant et les parents</strong> est un élément central pour le bien-être et la réussite des élèves. Les conseils proposés — préparer les rencontres, écouter activement, partager des points positifs, fixer des objectifs communs — créent un <strong>climat de collaboration</strong> plutôt qu'une simple transmission d'information. Étant enseignante avec une expérience en Tunisie et en France, je reconnais que certaines pratiques peuvent sembler nouvelles dans le contexte ontarien. Chaque lecture est une occasion d'apprendre et de m'adapter, avec curiosité plutôt que pression. Je note toutefois que les documents pourraient être plus explicites sur les différences culturelles et les contextes variés des familles — il serait intéressant d'adapter les communications à la diversité des contextes familiaux (parents dont la langue maternelle est différente, familles multiculturelles, etc.).</p>
+
+            <h4 class="font-heading font-semibold text-base mt-6 mb-3" style="color:#2E2E2E;">Bilan de la semaine</h4>
+            <p>Cette dernière semaine a complété le tableau en montrant que l'évaluation ne s'arrête pas à la collecte de preuves et à la notation — elle englobe aussi le <strong>jugement professionnel, la différenciation, l'inclusion et la communication</strong>. Ces quatre piliers forment un ensemble qui rend l'évaluation humaine, équitable et utile à tous les acteurs de l'éducation : l'élève, l'enseignant et les familles. La différenciation exige flexibilité et créativité, le jugement professionnel se développe avec l'expérience, et la communication avec les familles demande une ouverture culturelle et une posture de collaboration. C'est un apprentissage continu que je suis prête à poursuivre dans ma pratique future en Ontario.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Réflexion de synthèse -->
+      <div class="mt-10 overflow-hidden rounded-card bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
+        <h3 class="font-heading text-lg font-semibold" style="color:#2E2E2E;">
+          Réflexion de synthèse <span class="text-sm font-normal" style="color:#999;">— Bilan du cours</span>
+        </h3>
+        <p class="mt-1 max-w-2xl text-sm" style="color:#666;">Ce que ce cours a changé dans ma vision de l'évaluation et ce que j'emporte dans ma pratique future.</p>
+
+        <div class="mt-6 grid gap-5 lg:grid-cols-2">
+
+          <div class="rounded-xl p-5" style="background:#f9f7f2; border:1px solid rgba(123,174,127,0.12);">
+            <div class="mb-3 flex items-center gap-2">
+              <span class="flex h-7 w-7 items-center justify-center rounded-lg text-xs font-bold" style="background:rgba(123,174,127,0.15); color:#3b6640;">A</span>
+              <p class="text-xs font-semibold uppercase tracking-wider" style="color:#888;">Ce que j'ai découvert</p>
+            </div>
+            <div class="text-xs leading-relaxed" style="color:#555;">
+              <p>En arrivant dans le système ontarien, l'évaluation était pour moi surtout un outil de mesure des résultats — des examens, des notes. Ce cours m'a fait découvrir une autre vision : l'évaluation comme <strong>processus continu</strong>, intégré à l'enseignement, qui soutient l'apprentissage plutôt que de simplement le sanctionner.</p>
+              <p class="mt-2">J'ai découvert l'importance de la <strong>triangulation</strong> (observation + production + oral), de la <strong>rétroaction descriptive</strong> orientée vers l'action, et de la <strong>planification à rebours</strong> qui donne du sens à chaque activité.</p>
+              <p class="mt-2">J'ai aussi appris que le <strong>jugement professionnel</strong> n'est pas une simple intuition mais une compétence qui se développe avec l'analyse rigoureuse des preuves et l'accompagnement des pairs.</p>
+            </div>
+          </div>
+
+          <div class="rounded-xl p-5" style="background:#f9f7f2; border:1px solid rgba(232,153,141,0.12);">
+            <div class="mb-3 flex items-center gap-2">
+              <span class="flex h-7 w-7 items-center justify-center rounded-lg text-xs font-bold" style="background:rgba(232,153,141,0.15); color:#8e4639;">B</span>
+              <p class="text-xs font-semibold uppercase tracking-wider" style="color:#888;">Ce que j'emporte</p>
+            </div>
+            <div class="text-xs leading-relaxed" style="color:#555;">
+              <p>Pour ma pratique future en Ontario, je retiens :</p>
+              <ul class="mt-2 space-y-1.5 list-disc pl-4">
+                <li><strong>Commencer par les résultats d'apprentissage</strong> — toujours savoir où l'on va avant de choisir le chemin.</li>
+                <li><strong>Rendre les critères clairs et partagés</strong> — les élèves doivent comprendre ce qui est attendu avant de commencer.</li>
+                <li><strong>Observer, croiser, ajuster</strong> — trianguler les preuves et adapter en continu.</li>
+                <li><strong>Rétroagir avec bienveillance et précision</strong> — 2 forces + 1 action, centrée sur la tâche et non sur la personne.</li>
+                <li><strong>Différencier avec intention</strong> — adapter le contenu, le processus et le produit sans baisser les attentes.</li>
+                <li><strong>Rester humble et curieuse</strong> — je suis en apprentissage du système canadien, et chaque lecture, chaque expérience me fait avancer.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="section-divider">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <path d="M0,20 C200,5 400,35 600,20 C800,5 1000,35 1200,20" stroke="#F5C842" stroke-width="1.5" fill="none" opacity="0.3"/>
+        <path d="M0,25 C150,40 450,5 700,25 C950,45 1100,10 1200,22" stroke="#7BAE7F" stroke-width="1" fill="none" opacity="0.25"/>
+      </svg>
+    </div>
+
+    <!-- ╔═══════════════════════════════╗
+         ║        ANNEXES — IA           ║
+         ╚═══════════════════════════════╝ -->
+    <section id="annexes" class="section-sage scroll-mt-20 py-12">
+      <div class="mx-auto max-w-6xl px-4">
+
+      <div class="section-heading">
+        <h2 class="section-title font-heading text-2xl font-bold tracking-tight" style="color:#2E2E2E;">
+          <i data-lucide="file-text" class="mb-1 mr-2 inline h-6 w-6" style="color:#7BAE7F;"></i>Annexes — Ressources &amp; Intégrité intellectuelle
+        </h2>
+        <p class="mt-2 text-sm" style="color:#666;">Références consultées dans le cadre du cours et documentation de l'usage de l'IA.</p>
+      </div>
+
+      <!-- Références et ressources du cours -->
+      <div class="mt-10 overflow-hidden rounded-card bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
+        <h3 class="font-heading text-base font-semibold" style="color:#2E2E2E;">
+          <i data-lucide="book-open" class="mb-0.5 mr-2 inline h-5 w-5" style="color:#7BAE7F;"></i>Références et ressources consultées
+        </h3>
+
+        <div class="mt-5 grid gap-5 md:grid-cols-2">
+
+          <!-- Documents institutionnels -->
+          <div class="rounded-xl p-4" style="background:#f9f7f2; border:1px solid rgba(123,174,127,0.12);">
+            <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#4d8051;">Documents institutionnels (Ontario)</p>
+            <ul class="mt-2 space-y-1.5 text-xs list-disc pl-4" style="color:#555;">
+              <li>Ministère de l'Éducation de l'Ontario (2010). <em>Faire croître le succès : Évaluation et communication du rendement des élèves</em>, 1<sup>re</sup>–12<sup>e</sup> année.</li>
+              <li>CFORP (2011). <em>Résultats d'apprentissage</em> — Fascicule 1.</li>
+              <li>CFORP (2011). <em>Critères d'évaluation</em> — Fascicule 2.</li>
+              <li>CFORP (2013). <em>Preuves d'apprentissage</em> — Fascicule 3.</li>
+              <li>CFORP (2011). <em>Rétroaction</em> — Fascicule 4.</li>
+              <li>CFORP. <em>Capsules d'autoformation</em> — Différenciation pédagogique.</li>
+              <li>OQRE — Infographique norme provinciale.</li>
+              <li>Guide d'appui à la préparation des bulletins scolaires.</li>
+              <li>AEFO — Guide du jugement professionnel.</li>
+            </ul>
+          </div>
+
+          <!-- Ressources pédagogiques -->
+          <div class="rounded-xl p-4" style="background:#f9f7f2; border:1px solid rgba(245,200,66,0.12);">
+            <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#8b6c18;">Ressources pédagogiques &amp; académiques</p>
+            <ul class="mt-2 space-y-1.5 text-xs list-disc pl-4" style="color:#555;">
+              <li>Brookhart, S. (2010). <em>Stratégies de rétroaction</em>.</li>
+              <li>Bégin, C. (2008). <em>Les stratégies d'apprentissage : un cadre de référence simplifié</em>.</li>
+              <li>Dionne, É. (2015). <em>Évaluer ses élèves à partir de critères</em>, Québec français.</li>
+              <li>Cnesco (2022). <em>Conférence de consensus — L'évaluation en classe, au service de l'apprentissage des élèves</em>.</li>
+              <li>Université de Strasbourg — IDIP. <em>L'éval' à l'envers : types, modalités et formes de l'évaluation</em>.</li>
+              <li>Université de Strasbourg — IDIP. <em>Pratiques pédagogiques</em> (alignement pédagogique &amp; stratégies).</li>
+              <li>Simon, M. &amp; Wiggins, G. <em>Perspectives sur la rétroaction</em>.</li>
+              <li>Saskatchewan (2017). <em>La pédagogie différenciée, de la maternelle à la 12<sup>e</sup> année</em>.</li>
+              <li><em>Les pratiques pédagogiques inclusives</em> (Académie de Lille).</li>
+              <li>HEC Montréal. <em>Rétroaction efficace</em>.</li>
+              <li>GÉAN — Éductive. <em>Guide pour évaluer les apprentissages avec le numérique</em>.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Productions du cours -->
+        <div class="mt-5 rounded-xl p-4" style="background:#f9f7f2; border:1px solid rgba(232,153,141,0.12);">
+          <p class="text-[11px] font-semibold uppercase tracking-wider" style="color:#8e4639;">Productions réalisées dans le cadre du cours</p>
+          <div class="mt-2 grid gap-3 md:grid-cols-2">
+            <ul class="space-y-1.5 text-xs list-disc pl-4" style="color:#555;">
+              <li><strong>P1.1</strong> — Analyse des pratiques évaluatives (scénario interdisciplinaire, Carnet 5 — Perspectives autochtones).</li>
+              <li><strong>P2</strong> — Planification à rebours d'une unité d'apprentissage (Maths 6<sup>e</sup> + Français, littératie financière).</li>
+              <li>Critères d'évaluation adaptés : français (lecture, écriture, oral), mathématiques, sciences, arts visuels, musique.</li>
+            </ul>
+            <ul class="space-y-1.5 text-xs list-disc pl-4" style="color:#555;">
+              <li>Grilles d'évaluation adaptées (FRL1W, MTH1W, SNC1W, études sociales, éducation artistique).</li>
+              <li>Rétroactions hebdomadaires sur les lectures (semaines 1 à 4).</li>
+              <li>Réflexions sur la différenciation pédagogique, les pratiques inclusives et la communication du rendement.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Critères curriculum par matière -->
+        <details class="mt-5 rounded-xl p-4" style="background:#f9f7f2; border:1px solid rgba(123,174,127,0.12);">
+          <summary class="cursor-pointer select-none text-sm font-semibold" style="color:#2E2E2E;">Critères d'évaluation par matière (aperçu)</summary>
+          <div class="mt-3 grid gap-4 md:grid-cols-2">
+            <div>
+              <p class="text-xs font-semibold" style="color:#4d8051;">Français — Écriture</p>
+              <ul class="mt-1 space-y-0.5 text-[11px] list-disc pl-4" style="color:#555;">
+                <li>CC : connaître les caractéristiques du genre de texte.</li>
+                <li>HP : planifier avec des stratégies de préécriture, choisir et développer les idées.</li>
+                <li>CO : organiser selon une suite logique, écrire en respectant l'intention.</li>
+                <li>MA : rédiger en respectant les caractéristiques, utiliser les stratégies du processus d'écriture.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-xs font-semibold" style="color:#8b6c18;">Mathématiques — Numératie</p>
+              <ul class="mt-1 space-y-0.5 text-[11px] list-disc pl-4" style="color:#555;">
+                <li>CC : définir et comprendre les concepts (addition, aire, propriétés).</li>
+                <li>HP : interpréter les éléments du problème, choisir une stratégie, vérifier la vraisemblance.</li>
+                <li>CO : organiser la démarche, expliquer oralement, utiliser symboles et vocabulaire.</li>
+                <li>MA : appliquer une démarche dans un contexte familier puis nouveau.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-xs font-semibold" style="color:#8e4639;">Français — Communication orale formelle (3<sup>e</sup>–6<sup>e</sup>)</p>
+              <ul class="mt-1 space-y-0.5 text-[11px] list-disc pl-4" style="color:#555;">
+                <li>CC : connaître les éléments de la situation de communication et les stratégies.</li>
+                <li>HP : planifier la présentation, sélectionner l'information, réagir avec esprit critique.</li>
+                <li>CO : présenter selon un ordre logique, respecter l'intention et le public cible.</li>
+                <li>MA : appliquer le processus de communication orale (préparation, présentation, objectivation).</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-xs font-semibold" style="color:#555;">Sciences &amp; technologie</p>
+              <ul class="mt-1 space-y-0.5 text-[11px] list-disc pl-4" style="color:#555;">
+                <li>CC : connaître et comprendre les concepts clés reliés au sujet.</li>
+                <li>HP : planifier recherche/expérience/résolution de problème, traiter et analyser l'information.</li>
+                <li>CO : organiser les idées, communiquer les résultats, utiliser la terminologie.</li>
+                <li>MA : appliquer les démarches appropriées, faire des liens avec la vie quotidienne.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Journal IA -->
+      <div class="mt-10 overflow-hidden rounded-card bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
+        <div class="mb-4 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+          <h3 class="font-heading text-base font-semibold" style="color:#2E2E2E;">Journal des requêtes IA</h3>
+          <span class="text-xs" style="color:#999;">Une entrée par usage significatif</span>
+        </div>
+
+        <div class="overflow-x-auto rounded-xl" style="border:1px solid rgba(123,174,127,0.12);">
+          <table class="min-w-full text-left text-sm">
+            <thead class="border-b text-xs uppercase tracking-wider" style="border-color:rgba(123,174,127,0.1); background:#f9f7f2; color:#999;">
+              <tr>
+                <th class="px-4 py-3">Date</th>
+                <th class="px-4 py-3">Objectif</th>
+                <th class="px-4 py-3">Prompt (copie)</th>
+                <th class="px-4 py-3">Réponse (résumé)</th>
+                <th class="px-4 py-3">Utilisation</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y" style="--tw-divide-color:rgba(123,174,127,0.08);">
+              <tr class="align-top transition-colors" style="color:#555;">
+                <td class="px-4 py-3">2026-03-10</td>
+                <td class="px-4 py-3">Structurer et remplir le portfolio numérique</td>
+                <td class="px-4 py-3 text-xs">« Parse le dossier doc pour remplir le portfolio selon les guidelines. »</td>
+                <td class="px-4 py-3 text-xs">L'IA a extrait le contenu de tous les documents .docx (rétroactions, productions P1.1 et P2, critères d'évaluation, etc.) et les a intégrés dans les sections du portfolio.</td>
+                <td class="px-4 py-3 text-xs">Structure du portfolio gardée et enrichie. Contenu tiré intégralement de mes propres productions et rétroactions du cours. Textes personnels conservés tels quels.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <details class="mt-5 rounded-xl p-4" style="background:#f9f7f2; border:1px solid rgba(123,174,127,0.12);">
+          <summary class="cursor-pointer select-none text-sm font-semibold" style="color:#2E2E2E;">Conseils — anonymisation &amp; intégrité</summary>
+          <ul class="mt-3 space-y-1 text-sm list-disc pl-5" style="color:#555;">
+            <li>Anonymiser systématiquement les noms et données d'élèves.</li>
+            <li>Garder une trace des prompts "tels quels" (copier-coller).</li>
+            <li>Indiquer ce qui a été repris, adapté ou ignoré.</li>
+          </ul>
+        </details>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-12 flex items-center gap-4 overflow-hidden rounded-card bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-xl" style="background:#7BAE7F;">📖</span>
+        <div>
+          <p class="font-heading text-sm font-semibold" style="color:#2E2E2E;">Jihene Romdhane — Portfolio numérique professionnel</p>
+          <p class="mt-0.5 text-xs" style="color:#999;">Navigation claire · Artefacts (photo · audio · vidéo) · Insertion professionnelle en Ontario</p>
+        </div>
+      </footer>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+  <script>document.addEventListener('DOMContentLoaded', () => { if (window.lucide) lucide.createIcons(); });</script>
+</body>
+</html>

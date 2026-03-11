@@ -1,0 +1,316 @@
+/* ═══════════════════════════════════════════════════════
+   Jihene Romdhane — Portfolio Redesign
+   Color Palette:
+     Primary sage    #7BAE7F
+     Secondary gold  #F5C842
+     Accent rose     #E8998D
+     Background      #FDFAF5
+     Text            #2E2E2E
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Custom properties ─────────────────────────────────── */
+:root {
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.03), 0 4px 20px rgba(123,174,127,0.05);
+  --shadow-card-hover: 0 12px 48px rgba(123,174,127,0.10), 0 2px 12px rgba(0,0,0,0.03);
+}
+
+/* ── Base ──────────────────────────────────────────────── */
+body {
+  font-family: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  background-color: #FDFAF5;
+  color: #2E2E2E;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #2E2E2E;
+}
+
+/* ── Section heading with accent bar ──────────────────── */
+.section-heading {
+  border-left: 4px solid #7BAE7F;
+  padding-left: 0.875rem;
+}
+
+/* Section title decorative underline */
+.section-title {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background: #E8998D;
+  border-radius: 2px;
+}
+
+/* ── Navigation ───────────────────────────────────────── */
+.nav-link {
+  position: relative;
+  transition: color 0.25s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background: #E8998D;
+  border-radius: 1px;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 70%;
+  left: 15%;
+}
+.nav-link[aria-current="page"] {
+  color: #4d8051;
+  background-color: rgba(123,174,127,0.1);
+  font-weight: 600;
+}
+.nav-link[aria-current="page"]::after {
+  width: 70%;
+  left: 15%;
+  background: #7BAE7F;
+}
+
+/* ── Placeholder boxes ────────────────────────────────── */
+.placeholder-box {
+  background-color: rgba(123,174,127,0.06);
+  border: 1.5px dashed rgba(123,174,127,0.4);
+  border-radius: 0.75rem;
+  padding: 0.875rem 1rem;
+}
+
+/* ── Cards ─────────────────────────────────────────────── */
+.card-hover {
+  transition: box-shadow 0.4s var(--ease-out-expo), transform 0.4s var(--ease-out-expo);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+}
+.card-hover:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+
+/* ── Focus ─────────────────────────────────────────────── */
+:focus-visible {
+  outline: 3px solid rgba(123,174,127,0.5);
+  outline-offset: 2px;
+}
+
+/* ── Section divider SVG ──────────────────────────────── */
+.section-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  padding: 1.5rem 0;
+}
+.section-divider svg {
+  width: 100%;
+  height: 40px;
+}
+
+/* ── Alternating section backgrounds ──────────────────── */
+.section-warm {
+  background-color: #FDFAF5;
+}
+.section-sage {
+  background-color: #f4f8f4;
+}
+
+/* ── Hero banner ──────────────────────────────────────── */
+.hero-banner {
+  background: linear-gradient(135deg, #7BAE7F 0%, #a8cfaa 40%, #F5C842 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 20% 80%, rgba(232,153,141,0.25) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 20%, rgba(245,200,66,0.2) 0%, transparent 60%);
+}
+
+/* ── Warm tag chips ───────────────────────────────────── */
+.tag-sage {
+  background: rgba(123,174,127,0.12);
+  color: #3b6640;
+  border: 1px solid rgba(123,174,127,0.25);
+}
+.tag-rose {
+  background: rgba(232,153,141,0.12);
+  color: #8e4639;
+  border: 1px solid rgba(232,153,141,0.25);
+}
+.tag-gold {
+  background: rgba(245,200,66,0.12);
+  color: #8b6c18;
+  border: 1px solid rgba(245,200,66,0.25);
+}
+.tag-neutral {
+  background: rgba(46,46,46,0.06);
+  color: #555;
+  border: 1px solid rgba(46,46,46,0.12);
+}
+
+/* ── Badge pills ──────────────────────────────────────── */
+.badge-sage {
+  background: rgba(123,174,127,0.1);
+  color: #3b6640;
+  border: 1px solid rgba(123,174,127,0.3);
+}
+.badge-rose {
+  background: rgba(232,153,141,0.1);
+  color: #8e4639;
+  border: 1px solid rgba(232,153,141,0.3);
+}
+.badge-gold {
+  background: rgba(245,200,66,0.1);
+  color: #8b6c18;
+  border: 1px solid rgba(245,200,66,0.3);
+}
+
+/* ── Info boxes (replacing teal/rose/indigo boxes) ────── */
+.info-sage {
+  background: rgba(123,174,127,0.08);
+  border: 1px solid rgba(123,174,127,0.2);
+  border-radius: 0.75rem;
+}
+.info-rose {
+  background: rgba(232,153,141,0.08);
+  border: 1px solid rgba(232,153,141,0.2);
+  border-radius: 0.75rem;
+}
+.info-gold {
+  background: rgba(245,200,66,0.08);
+  border: 1px solid rgba(245,200,66,0.2);
+  border-radius: 0.75rem;
+}
+.info-neutral {
+  background: rgba(46,46,46,0.03);
+  border: 1px solid rgba(46,46,46,0.08);
+  border-radius: 0.75rem;
+}
+
+/* ── Table row highlights ─────────────────────────────── */
+.tool-row-active {
+  background-color: rgba(123,174,127,0.1) !important;
+  box-shadow: inset 0 0 0 1px rgba(123,174,127,0.3);
+}
+
+/* ── Textarea ─────────────────────────────────────────── */
+textarea:focus {
+  border-color: #7BAE7F;
+  box-shadow: 0 0 0 3px rgba(123,174,127,0.15);
+}
+
+/* ── Scroll Reveal Animations ─────────────────────────── */
+.js-loaded .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s var(--ease-out-expo),
+              transform 0.8s var(--ease-out-expo);
+}
+.js-loaded .reveal.revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger children in grids */
+.js-loaded .reveal-stagger > .reveal:nth-child(1) { transition-delay: 0s; }
+.js-loaded .reveal-stagger > .reveal:nth-child(2) { transition-delay: 0.1s; }
+.js-loaded .reveal-stagger > .reveal:nth-child(3) { transition-delay: 0.2s; }
+.js-loaded .reveal-stagger > .reveal:nth-child(4) { transition-delay: 0.3s; }
+.js-loaded .reveal-stagger > .reveal:nth-child(5) { transition-delay: 0.4s; }
+.js-loaded .reveal-stagger > .reveal:nth-child(6) { transition-delay: 0.5s; }
+
+/* Hero entrance */
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: none; }
+}
+.hero-banner > div:first-child > * {
+  animation: heroFadeIn 1s var(--ease-out-expo) both;
+}
+.hero-banner > div:first-child > :nth-child(1) { animation-delay: 0.15s; }
+.hero-banner > div:first-child > :nth-child(2) { animation-delay: 0.35s; }
+.hero-banner > div:first-child > :nth-child(3) { animation-delay: 0.55s; }
+.hero-banner > div:first-child > :nth-child(4) { animation-delay: 0.75s; }
+
+/* Section divider fade */
+.section-divider svg path {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  transition: stroke-dashoffset 1.6s var(--ease-out-expo);
+}
+.section-divider.revealed svg path {
+  stroke-dashoffset: 0;
+}
+
+/* Subtle float for hero CTA */
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+.hero-banner a[href="#accueil"] {
+  animation: gentleFloat 3s ease-in-out 1.5s infinite;
+}
+
+/* Header scroll state */
+header {
+  transition: box-shadow 0.3s ease, padding 0.3s ease;
+}
+header.scrolled {
+  box-shadow: 0 2px 20px rgba(123,174,127,0.1);
+}
+
+/* Smoother table row transitions */
+#toolTable tr {
+  transition: background-color 0.25s ease;
+}
+
+/* Smoother info boxes */
+.info-sage, .info-rose, .info-gold, .info-neutral {
+  transition: box-shadow 0.3s ease;
+}
+
+/* Section spacing boost */
+main > section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+/* Lighter text weight for long prose */
+.text-sm {
+  letter-spacing: 0.005em;
+}
+
+/* ── Smooth scroll ────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Reduced motion ───────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card-hover:hover { transform: none; }
+  .nav-link::after { transition: none; }
+  .js-loaded .reveal { opacity: 1; transform: none; transition: none; }
+  .hero-banner > div:first-child > * { animation: none; opacity: 1; transform: none; }
+  .hero-banner a[href="#accueil"] { animation: none; }
+  .section-divider svg path { stroke-dashoffset: 0; transition: none; }
+}
