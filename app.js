@@ -15,24 +15,32 @@
     menu.classList.add('hidden');
   }));
 
-  // Lien actif par section visible
+  // Lien actif par section visible — scroll-position based
   const sections = Array.from(document.querySelectorAll('main section[id]'));
+  const headerHeight = 80; // fixed header offset
 
-  const observer = new IntersectionObserver((entries) => {
-    const top = entries
-      .filter((e) => e.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (!top) return;
+  function updateActiveLink() {
+    let current = null;
+    for (let i = sections.length - 1; i >= 0; i--) {
+      const rect = sections[i].getBoundingClientRect();
+      if (rect.top <= headerHeight + 60) {
+        current = sections[i];
+        break;
+      }
+    }
+    if (!current && sections.length) current = sections[0];
+    if (!current) return;
     links.forEach((a) => {
-      if ((a.getAttribute('href') || '') === `#${top.target.id}`) {
+      if ((a.getAttribute('href') || '') === `#${current.id}`) {
         a.setAttribute('aria-current', 'page');
       } else {
         a.removeAttribute('aria-current');
       }
     });
-  }, { threshold: [0.15, 0.4, 0.65] });
+  }
 
-  sections.forEach((s) => observer.observe(s));
+  window.addEventListener('scroll', updateActiveLink, { passive: true });
+  updateActiveLink();
 })();
 
 // ── Boîte à outils — tableau interactif ─────────────────
@@ -164,6 +172,7 @@
     '#activites .rounded-card.bg-white',
     '#philosophie .mt-10.grid > article',
     '.rounded-card.bg-white.shadow-sm',
+    '.video-showcase',
   ];
 
   const elements = document.querySelectorAll(selectors.join(','));

@@ -304,10 +304,49 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ── Video showcase ────────────────────────────────────── */
+.video-card {
+  transition: box-shadow 0.4s var(--ease-out-expo), transform 0.4s var(--ease-out-expo);
+  box-shadow: var(--shadow-card);
+}
+.video-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+/* Video auto-sizes to native dimensions, centered in container */
+.video-card video {
+  display: block;
+  margin-inline: auto;
+}
+.video-card-header {
+  transition: background-color 0.3s ease;
+}
+
+/* Reveal animation for video showcase */
+.js-loaded .video-showcase .video-card {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s var(--ease-out-expo),
+              transform 0.7s var(--ease-out-expo),
+              box-shadow 0.4s var(--ease-out-expo);
+}
+.js-loaded .video-showcase.revealed .video-card:nth-child(1) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.1s;
+}
+.js-loaded .video-showcase.revealed .video-card:nth-child(2) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.25s;
+}
+
 /* ── Reduced motion ───────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .card-hover:hover { transform: none; }
+  .video-card:hover { transform: none; }
+  .js-loaded .video-showcase .video-card { opacity: 1; transform: none; transition: none; }
   .nav-link::after { transition: none; }
   .js-loaded .reveal { opacity: 1; transform: none; transition: none; }
   .hero-banner > div:first-child > * { animation: none; opacity: 1; transform: none; }

@@ -572,7 +572,72 @@
         </article>
       </div>
 
-      <!-- Vidéo d'activité -->
+      <!-- ── Exemple vidéo de cours ── -->
+      <div class="mt-10 overflow-hidden rounded-card bg-white p-6 shadow-sm video-showcase" style="border:1px solid rgba(123,174,127,0.10);">
+        <div class="section-heading mb-6">
+          <h3 class="font-heading text-lg font-semibold" style="color:#2E2E2E;">
+            <i data-lucide="video" class="mb-0.5 mr-2 inline h-5 w-5" style="color:#E8998D;"></i>Exemple vidéo de cours
+          </h3>
+          <p class="mt-1 text-sm" style="color:#666;">Captations vidéo réalisées en contexte de classe — illustrations concrètes de pratiques pédagogiques.</p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 items-start">
+          <!-- Vidéo 1 -->
+          <div class="video-card group relative overflow-hidden rounded-xl" style="border:1px solid rgba(123,174,127,0.15);">
+            <div class="video-card-header flex items-center gap-2 px-4 py-3" style="background:rgba(123,174,127,0.06); border-bottom:1px solid rgba(123,174,127,0.1);">
+              <span class="flex h-7 w-7 items-center justify-center rounded-lg text-xs" style="background:rgba(123,174,127,0.15);">
+                <i data-lucide="play-circle" class="h-4 w-4" style="color:#3b6640;"></i>
+              </span>
+              <div>
+                <p class="text-sm font-semibold" style="color:#2E2E2E;">Vidéo 1</p>
+                <p class="text-[11px]" style="color:#999;">Captation en classe</p>
+              </div>
+              <span class="badge-sage ml-auto rounded-full px-2 py-0.5 text-[10px] font-semibold">Cours</span>
+            </div>
+            <div class="rounded-b-xl" style="background:#0a0a0a;">
+              <video
+                class="mx-auto block max-h-[70vh] w-auto max-w-full"
+                controls
+                preload="metadata"
+              >
+                <source src="assets/1.mp4" type="video/mp4" />
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+          </div>
+
+          <!-- Vidéo 2 -->
+          <div class="video-card group relative overflow-hidden rounded-xl" style="border:1px solid rgba(245,200,66,0.15);">
+            <div class="video-card-header flex items-center gap-2 px-4 py-3" style="background:rgba(245,200,66,0.06); border-bottom:1px solid rgba(245,200,66,0.1);">
+              <span class="flex h-7 w-7 items-center justify-center rounded-lg text-xs" style="background:rgba(245,200,66,0.15);">
+                <i data-lucide="play-circle" class="h-4 w-4" style="color:#8b6c18;"></i>
+              </span>
+              <div>
+                <p class="text-sm font-semibold" style="color:#2E2E2E;">Vidéo 2</p>
+                <p class="text-[11px]" style="color:#999;">Captation en classe</p>
+              </div>
+              <span class="badge-gold ml-auto rounded-full px-2 py-0.5 text-[10px] font-semibold">Cours</span>
+            </div>
+            <div class="rounded-b-xl" style="background:#0a0a0a;">
+              <video
+                class="mx-auto block max-h-[70vh] w-auto max-w-full"
+                controls
+                preload="metadata"
+              >
+                <source src="assets/2.mp4" type="video/mp4" />
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 rounded-xl p-3 info-neutral">
+          <p class="text-xs" style="color:#555;">
+            <strong>Note :</strong> Ces vidéos sont des captations réalisées dans le cadre du cours. Elles illustrent des moments d'enseignement et de pratiques évaluatives en contexte réel.
+          </p>
+        </div>
+      </div>
+
       <!-- Différenciation pédagogique -->
       <div class="mt-10 overflow-hidden rounded-card bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
         <h3 class="section-heading font-heading text-lg font-semibold" style="color:#2E2E2E;">
@@ -1116,26 +1181,6 @@
             </tbody>
           </table>
         </div>
-
-        <details class="mt-5 rounded-xl p-4" style="background:#f9f7f2; border:1px solid rgba(123,174,127,0.12);">
-          <summary class="cursor-pointer select-none text-sm font-semibold" style="color:#2E2E2E;">Conseils — anonymisation &amp; intégrité</summary>
-          <ul class="mt-3 space-y-1 text-sm list-disc pl-5" style="color:#555;">
-            <li>Anonymiser systématiquement les noms et données d'élèves.</li>
-            <li>Garder une trace des prompts "tels quels" (copier-coller).</li>
-            <li>Indiquer ce qui a été repris, adapté ou ignoré.</li>
-          </ul>
-        </details>
-      </div>
-
-      <!-- Footer -->
-      <footer class="mt-12 flex items-center gap-4 overflow-hidden rounded-card bg-white p-6 shadow-sm" style="border:1px solid rgba(123,174,127,0.10);">
-        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-xl" style="background:#7BAE7F;">📖</span>
-        <div>
-          <p class="font-heading text-sm font-semibold" style="color:#2E2E2E;">Jihene Romdhane — Portfolio numérique professionnel</p>
-          <p class="mt-0.5 text-xs" style="color:#999;">Navigation claire · Artefacts (photo · audio · vidéo) · Insertion professionnelle en Ontario</p>
-        </div>
-      </footer>
-
       </div>
     </section>
   </main>
