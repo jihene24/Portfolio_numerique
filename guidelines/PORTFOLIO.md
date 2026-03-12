@@ -1,0 +1,7 @@
+# Tâche individuelle 
+
+L’étudiant constituera un portfolio réflexif et professionnel qui rassemble ses apprentissages, les ressources etles expériences vécues dans le cadre du cours. Conçu comme une boîte à outils pour l’évaluation des apprentissages à l’élémentaire, ce portfolio doit mettre en valeur des éléments concrets, simples et accessibles qui pourront être mobilisés en stage et dans la future pratique professionnelle. L’accent est mis sur la clarté du langage, l’ancrage dans de bonnes pratiques évaluatives et l’adaptation aux besoins diversifiés des élèves de l’élémentaire.
+
+# Format 
+
+Le portfolio numérique servira donc de preuve d’apprentissage principale qui rassemble ses apprentissages, ressources et expériences vécues dans le cadre du cours. L’étudiant y insérera les artefacts de ses apprentissages : documents, photos de documents manuscrits, autoévaluation, réflexions, balados ou vidéos. De plus, la professeure recueillera des preuves d’apprentissage par triangulation. Donc, les conversations (entrevue, discussions, questionnement à l’oral) ou l’observation lors des présentations et des discussions pourront faire l’objet d’évaluations. La professeure pourra diversifier les modes de rétroaction, une rétroaction audio, audiovisuelle ou écrite sur un travail. Les instruments de mesure (la liste de vérification, la grille d’observation ou l’échelle d’appréciation) seront coconstruits ou présentés à l’avance.
